@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BradCrash Couse JS</title>
+    <script type="text/javascript" src="main.js" defer>
+      const s = 'coca, pepsi, bigi, fanta';
+      console.log(s.split(', '))
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

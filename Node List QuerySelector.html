@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NodeListObject</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="" />
+</head>
+<body>
+    <h2>Javascript HTML DOM!</h2>
+    <p>Hello World!</p>
+    <p>Hello Nigeria!</p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <button onclick="getBOM()">Grab Window Parameters</button>
+    <button onclick="clos()">Close Browser</button>
+    <button onclick="resize()">Resize Browser</button>
+    <p class="hip"></p>
+    <p class="hip"></p>
+    <p class="hip"></p>
+    <p class="hip"></p>
+    <p class="hip"></p>
+    <p class="hip"></p>
+    <br>
+    <button onclick="screenProp()">Screen Properties</button>
+    <br>
+    <p class="hippo"></p>
+    <p class="hippo"></p>
+    <p class="hippo"></p>
+    <p class="hippo"></p>
+    <p class="hippo"></p>
+    <button onclick="LocNewProp()">Location Properties</button>
+    
+    <input type="button" value="Load new Document" onclick="newDoc()">
+
+    <input type="button" value="Back" onclick="back()">
+    <input type="button" value="Forward" onclick="forward()">
+</body>
+    <script>
+        var myNodelist = document.querySelectorAll("p");
+        document.getElementById("demo").innerHTML = 
+            "The innerHTML of the second paragraph is: " +
+            myNodelist[1].innerHTML;
+        document.getElementById("demo2").innerHTML = 
+        'The no of paragraphs here is ' + myNodelist.length + ' paragraphs ';
+        function getBOM(){
+        var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        alert('Window Width is '+ w + ' Window Height is '+ h);
+        }
+        function clos(){
+            window.close();
+        }
+        function screenProp(){
+            document.getElementsByClassName("hip")[0].innerHTML = 
+                'Window Full Screen width: '+ screen.width;
+            document.getElementsByClassName("hip")[1].innerHTML = 
+                'Window Full Screen height: '+ screen.height;
+            document.getElementsByClassName("hip")[2].innerHTML = 
+                'Window Available Screen width: '+ screen.availWidth;
+            document.getElementsByClassName("hip")[3].innerHTML = 
+                'Window Available Screen height: '+ screen.availHeight;
+            document.getElementsByClassName("hip")[4].innerHTML = 
+                'Window\'s Screen color Depth: '+ screen.colorDepth;
+            document.getElementsByClassName("hip")[5].innerHTML = 
+                'Pixel depth of screen is '+ screen.pixelDepth;
+        }
+        function LocNewProp(){
+            document.getElementsByClassName("hippo")[0].innerHTML = 
+                'Window.location.href is '+ location.href;
+            document.getElementsByClassName("hippo")[1].innerHTML = 
+            'Window.location.host is '+ location.host;
+            document.getElementsByClassName("hippo")[2].innerHTML = 
+            'Window.location.pathname is '+ location.pathname;
+            document.getElementsByClassName("hippo")[3].innerHTML = 
+            'Window.location.protocol is '+ location.protocol;
+            document.getElementsByClassName("hippo")[4].innerHTML = 
+            'Window.location.port is '+ location.port;
+
+        }
+        function newDoc(){
+            window.location.assign("file:///C:/xampp/htdocs/Personal/CreateAnimations.html");
+        }
+        function back(){
+            window.history.back();
+        }
+        function forward(){
+            window.history.forward();
+        }
+
+
+    </script>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timing of Events</title>
+</head>
+<body>
+    <button>Trial</button>
+    <button onclick="myVar = setTimeout(Popalert,5000)">Create Alert</button>
+    <button onclick="clearTimeout(myVar)">Stop Alert</button>
+    <p>Run a timer on this Page</p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="txt"></p>
+    <br>
+    <button onclick="startTime()">Start Timer</button>
+</body>
+
+<script>
+    //document.getElementsByTagName("button")[0].addEventListener("click",setTimeout(Popalert,5000));
+    
+    function Popalert(){
+        alert('Hello');
+    }
+
+    var time = setInterval(myTimer,1000);
+    function myTimer(){
+        var d = new Date();
+        document.getElementById("demo").innerHTML = d.toLocaleDateString()
+        document.getElementById("demo2").innerHTML = d.toLocaleTimeString();
+    }
+    function startTime(){
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML = 
+        h + " : " + m + " : " + s;
+        var t = setTimeout(startTime,1000);
+    }
+    function checkTime(i){
+        if(i<10){
+            i = "0"+ i
+            }
+            return i;
+    }
+</script>
+</html>

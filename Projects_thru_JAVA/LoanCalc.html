@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Loan Calculator</title>
+    
+    <link rel="stylesheet" href="../bootstrapHelpers/bootstrap.min.css">
+    
+    <script src="../bootstrapHelpers/jquery-3.3.1.slim.min.js"></script>
+    <script src="../bootstrapHelpers/popper.min.js"></script>
+    <script src="../bootstrapHelpers/bootstrap.min.js"></script>
+    <script src="loancalc.js" async></script>
+    </head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h4>Loan Calculator</h4>
+            </div>
+            <div class="card-body">
+                <form id="loaner">
+                    <div class="form-group my-3">
+                        <label for="amount" class="form-label">Loan Amount:</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">&#36;</span>
+                            </div>
+                            <input class="form-control" id="amt" name="amt" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="yrs">Number of Years:</label>
+                        <input class="form-control" id="yrs" name="yrs" required>
+                    </div>
+                    <input id="loan" name="loan" value="Estimate Payment" class="btn btn-secondary" type="submit">
+                </form>
+            </div>
+            <div class="card-footer">
+                <div class="d-flex justify-content-between">
+                    <div>Interest Rate</div>
+                    <div>Monthly Payment</div>
+                    <div>Total Payment</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

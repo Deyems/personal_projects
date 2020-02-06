@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hangman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" />
+    
+</head>
+<body>
+    <div class="wrapper">
+        <button id="starter">Start Game</button>
+        <button id ="end">End Game</button>
+    </div>
+</body>
+    <script>
+        let run = document.getElementById("starter");
+        run.addEventListener("click",play);
+        function play(){
+        let list = ["Worker","Teacher","Doctor","Layman","Trained"];
+        
+        let counter = Math.floor(Math.random()*list.length);
+        
+        for(i = 0; i < list.length; i++){
+            let guess = prompt("Can you Guess Correctly!");
+            randomWords = list[counter];
+            if(guess==randomWords){
+                alert("You are lovely guessman");
+                }
+                else {
+                    alert("Common Man! That's a wron guess...");
+                }
+                if(i==list.length){
+                    break;
+                }
+            }
+        }
+
+        play();
+
+        
+    </script>
+</html>

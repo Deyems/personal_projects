@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Use Navigator</title>
+</head>
+<body>
+    <p class="demo"></p>
+    <p class="demo"></p>
+    <p class="demo"></p>
+    <p class="demo"></p>
+    <p class="demo"></p>
+    <p class="demo"></p>
+    <p id="count"></p>
+    <button onclick="myfunction()">Give Alarm</button>
+    <button onclick="game()">Start Question</button>
+</body>
+<script>
+    document.getElementsByClassName("demo")[0].innerHTML = 
+        window.navigator.appCodeName;
+    document.getElementsByClassName("demo")[1].innerHTML = 
+        window.navigator.appName;
+    document.getElementsByClassName("demo")[2].innerHTML = 
+        window.navigator.appVersion;
+    document.getElementsByClassName("demo")[3].innerHTML = 
+        window.navigator.authentication;
+    document.getElementsByClassName("demo")[4].innerHTML = 
+        window.navigator.platform;
+    document.getElementsByClassName("demo")[5].innerHTML = 
+        window.navigator.product;
+    function myfunction(){
+        var txt;
+        if(confirm("Press a button!")){
+            txt = "You pressed Ok!";
+        } else{
+            txt = "You pressed Cancel!";
+        }
+        document.getElementById("count").innerHTML = txt;
+    }
+    function game(){
+        var person = prompt("Kindly enter your Name","Harry Prota");
+        if(person == null|| person ==""){
+            txt = "User cancelled the prompt.";
+        } else{
+            txt = "Hello "+person+ "! How are You today?";
+        }
+        alert("Congrats\n"+txt);
+    }
+</script>
+</html>

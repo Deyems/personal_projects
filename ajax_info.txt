@@ -1,0 +1,6 @@
+<?xml version= "1.0" encoding = "UTF-8"?>
+<breakfast_menu>
+    <food> Mundane
+    <name>Belgian Waffles</name>
+    </food>
+</breakfast_menu>

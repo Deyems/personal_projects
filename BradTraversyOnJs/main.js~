@@ -1,0 +1,91 @@
+//console.log(window);
+
+console.log(document.querySelectorAll('.item'));
+
+// const s = 'coca, pepsi, bigi, fanta';
+// console.log(s.split(','));
+
+//FUNCTIONS
+// function addNums(num1, num2){
+//   console.log(`The addition of ${num1} + ${num2} is`, num1 + num2);
+// }
+
+
+// USE ARROW FUNCTIONS
+const addNums = (num1=1, ...nums) =>{
+  console.log(num1 + nums);
+}
+addNums(30,50,90,50);
+
+const todos = [
+  {
+    id: 1,
+    text: 'Take out trash',
+    isCompleted: true
+  },
+  {
+    id: 2,
+    text: 'Burn for God',
+    isCompleted: false
+  },
+  {
+    id: 3,
+    text: 'Loop through dish',
+    isCompleted: true
+  }
+];
+
+todos.forEach((todo) => console.log(todo));
+
+// let i = 0;
+// while(i <= 10){
+//   console.log(`While Loop Number: ${i}`);
+//   i++;
+// }
+
+// for(let i = 0; i < todos.length; i++){
+//   console.log(JSON.stringify(todos[i]));
+// }
+
+//ANOTHER WAY TO LOOP THROUGH AN OBJECT
+// for(let i = 0; i < todos.length; i++){
+//   console.log(todos[i].text);
+// }
+
+//USING FOR...OF loop
+// for(let obj of todos){
+//   console.log(obj.isCompleted);
+// }
+//
+// //USING FOREACH, MAP, & FILTER
+// todos.forEach( function(todo) {
+//   console.log(todo.text);
+// });
+//
+// todos.forEach( function(todo){
+//     console.log(todo);
+//   });
+
+//map function returns an Array of different
+// items selected
+//   const todoText = todos.map(function(todo){
+//     return todo.isCompleted;
+//   });
+//
+//   console.log(todoText);
+//
+// // filter function returns the whole element
+// // containing the item selected - Array/Object
+// const todoCompleted = todos.filter(function(todo){
+//   return todo.isCompleted === true;
+//   // return todo.id;
+// });
+//
+// console.log(todoCompleted);
+
+
+
+
+
+
+//todos.foreach()

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Series Generator</title>
+</head>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .wrapper{
+            width: 40%;
+            margin: auto;
+            height: 100vh;
+            border: 2px solid #eee;
+            border-radius: 5px;
+            font-family: calibri;
+        }
+        
+        .top{
+            color: white;
+            height: 10vh;
+            background: tomato;
+            padding: 10px 5px;
+        }
+        
+        #appname{
+            height: 5vh;
+            background: bisque;
+            color: white;
+            text-align: center;
+            font-family: cursive;
+            font-weight: bold;
+            padding: 5px 5px;
+        }
+        
+        .results,.output,.inp-grp,.gen-grp{
+            padding: 5px;
+        }
+        
+        button{
+            height: 40px;
+            padding: 5px;
+            cursor: pointer;
+            background: #fff;
+            color:#aaa;
+            border: 0px solid tomato;
+            box-shadow: 2px 0px 7px grey;
+            border-radius: 5px;
+            font-family: trebuchet ms;
+            margin: 4px 3px;
+            outline:none;
+            transition: background 1s;
+        }
+        
+        button:hover{
+            background: rgba(255, 99, 71, 0.36);
+        }
+        
+        .results,.output{
+            display: none;
+        }
+        
+        input[type="text"]{
+            height: 45px;
+            padding: 5px;
+            border: 3px solid #eee;
+            color: tomato;
+        }
+        
+        
+    </style>
+    <body>
+        <div class="wrapper">
+            <div class="top"></div>
+            <div id="appname">Series Generator</div>
+            <form name="series">
+                <div class="inp-grp">
+                    <label for="startingNum">Kick Start your Series</label>
+                    <input type="text" id="startingNum" name="startingNum" value="">
+                </div>
+                <div class="results">2 + (1/2) + (3/5) + . . .</div>
+                <div class="output">Output</div>
+                <div class="gen-grp">
+                    <button type="submit" id="seriesGen" name="seriesGen">Generate Series</button>
+                    <button type="button" id="seriesSum" name="seriesSum">Sum of Series</button>
+                </div>
+            </form>
+        
+        </div>
+    </body>
+    
+    <script type="text/javascript" defer src="mainsum.js"></script>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Animate ball</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="" />
+</head>
+<body>
+    <div class="container">
+        <div class="ball">
+
+        </div>
+    </div>
+    <div class="controls">
+        <button onclick="runmove()" id="start">Start</button>
+        <button onclick="stop()" id="stop">Reset</button>
+    </div>
+    <div>
+        <p id="countup"></p>
+        <p id="countup2"></p>
+    </div>
+    <div>
+        <p id="countdown"></p>
+        <p id="countdown2"></p>
+    </div>
+</body>
+<style>
+    body{
+        box-sizing: border-box;
+    }
+    .container{
+        width: 800px;
+        height: 500px;
+        background-color: aqua;
+        border-radius: 5px;
+        position: relative;
+    }
+    .controls{
+        width: 500px;
+        height: 100px;
+        padding: 0px 20px;
+        border: 1px solid;
+        box-sizing: border-box;
+    }
+    button{
+        border: 1px solid white;
+        border-radius: 4px;
+        background-color: cadetblue;
+    }
+    #start{
+        float: left;
+    }
+    #stop{
+        float: right;
+    }
+    .ball{
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        background-color: saddlebrown;
+        position: absolute;
+    }
+    #countup,#countup2{
+        float: left;
+    }
+    #countdown,#countdown2{
+        float: left;
+    }
+</style>
+<script>
+    function runmove(){
+    var elem = document.getElementsByClassName("ball")[0];
+    var top, left;
+    top = 0; left = 0; 
+    x = setInterval(move,20);
+    function move(){
+       
+        if(top>=440 && left >= 440){
+                //clearInterval(x);
+                top--;
+                left--;
+                elem.style.bottom = top + 'px';
+                elem.style.left = left + 'px';
+                document.getElementById("countup").innerHTML = top;
+                document.getElementById("countup2").innerHTML = left;
+            }
+            else if(left==800){
+                stop();
+            }
+            else {
+                top++;
+                left++;
+                elem.style.top = top + 'px';
+                elem.style.left = left + 'px';
+                document.getElementById("countdown").innerHTML = top;
+                document.getElementById("countdown2").innerHTML = left;
+            }
+    }
+}
+function stop(){
+    clearInterval(x);
+}
+</script>
+</html>

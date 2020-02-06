@@ -1,0 +1,236 @@
+<!DOCtype html>
+<html lang="en-US">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping Cart</title>
+        <link rel="stylesheet" href="cartstyle.css">
+        <link rel="stylesheet" href="mediaquery.css">
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            <header>
+                <section class="container">
+                        
+                    <nav>
+                        <div class="logo">
+                            <img src="imgShopCart/LogoShopCart.png" alt="logo">
+                        </div>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Store</a></li>
+                        </ul>
+
+                        <button id="drop">
+                            <span></span><span></span><span></span>
+                        </button>
+                        
+                        <div class="contact">
+                            <h3>+123 - 456 - 789</h3>
+                        </div>
+                        
+                        <div class="cartchoice">
+                            <div id="choices">
+                                <i class="fas fa shopping-cart fa-1x"></i>
+                                <span id="selection">2</span>
+                                <span>items = </span>
+                                <span id="total">$10.49</span>
+                                <ul class="dropdown">
+                                    <li>
+                                        <div>
+                                            <figure>
+                                                <img src="" alt="Desc">
+                                            </figure>
+                                            <section>
+                                                <span>$</span> <span class="title">Cart Item</span>
+                                                 <span class="price">10.99</span>
+                                            </section>
+                                            <section><i>Del</i></section>
+                                        </div>
+                                    </li>
+                                    
+                                    <li>
+                                        <section>
+                                            <span>Total</span>
+                                            <span>$10.00</span>
+                                        </section>
+                                    </li>
+                                    <li>
+                                        <button id="clear" >Clear Cart</button>
+                                        <button id="checkOut" >Checkout</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    
+                    </nav>
+                    <div class="banner">
+                        <div>
+                            <h2>Welcome To <span>Grandma's</span></h2>
+                            <button>Explore</button>
+                        </div>
+                        <div class="imogis">
+                            <figure>
+                                <img src="" alt="cakes">
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+            </header> <!--End of Header housing Banner and Nav-->
+            
+            <section class="about-us">
+                <div class="notes">
+                    <h2> <span>About</span> <span>Us</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati earum laboriosam praesentium deleniti possimus quia tenetur libero ab ipsa fugit, voluptatem eaque, dolore a perferendis. Dolorum maxime repellat voluptatum asperiores!</p>
+                    <button>Explore</button>
+                </div>
+                <div class="description">
+                    <figure>
+                        <img src="" alt="cakes">
+                    </figure>
+                </div>
+            </section> <!--End of About Us Section-->
+            <section class="store">
+                <div class="store-container">
+                    <div class="options">
+                        <h2>our <span> Store </span></h2>
+
+                        <button class="drop">
+                            <span></span><span></span><span></span>
+                        </button>
+                        <ul>
+                            <li><a href="">All</a></li>
+                            <li><a href="">Cakes</a></li>
+                            <li><a href="">Cupcakes</a></li>
+                            <li><a href="">Sweets</a></li>
+                            <li><a href="">Doughnuts</a></li>
+                        </ul>
+                        <div class="searchbox">
+                            <span>o</span>
+                            <input type="search" name="cart" id="" placeholder="item....">
+                        </div>
+                    </div>
+                    
+                    <div class="collections">
+                        <div class="box" data-title="Wedding Cake item" data-num="20">
+                            <img src="imgShopCart/1200px-Wedding_cake_with_pillar_supports,_2009.jpg" alt="Sweet">
+                                <div class="cartIcon"></div>
+                            <div class="details">
+                                <caption>Wedding item</caption>
+                                <span>$5</span>
+                            </div>
+                        </div> <!--End of box-->
+                        <div class="box" data-title="Brown Cake item" data-num="5">
+                            <img src="imgShopCart/Best-Chocolate-Cake-SQUARE.jpg" alt="Cupcake">
+                                <div class="cartIcon"></div>
+                            <div class="details">
+                                <caption>Brown Cake item</caption>
+                                <span>$5</span>
+                            </div>
+                        </div> <!--End of box-->
+                        <div class="box" data-title="Birthday Cake item" data-num="15">
+                            <img src="imgShopCart/Cakedownload.jpg" alt="Cake">
+                                <div class="cartIcon"></div>
+                            <div class="details">
+                                <caption>Birthday cake item</caption>
+                                <span>$15</span>
+                            </div>
+                        </div> <!--End of box-->
+                        <!--End of Row One-->
+
+                        <div class="box" data-title="Royal Cake item" data-num="25">
+                            <img src="imgShopCart/Classic Black Forest Cake 1.jpg" alt="Doughnut">
+                                <div class="cartIcon"></div>
+                            <div class="details">
+                                <caption>Royal Cake item</caption>
+                                <span>$25</span>
+                            </div>
+                        </div> <!--End of box-->
+
+                        <div class="box" data-title="Sweet item" data-num="10">
+                            <img src="imgShopCart/IMG_4290_large.jpg" alt="Sweet">
+                                <div class="cartIcon"></div>
+                            <div class="details">
+                                <caption>Sweet item</caption>
+                                <span>$10</span>
+                            </div>
+                        </div> <!--End of box-->
+
+                        <div class="box" data-title="Cupcake item" data-num="10">
+                            <img src="imgShopCart/Edu line logo.png" alt="Cupcake">
+                                <div class="cartIcon"></div>
+                            <div class="details">
+                                <caption>Cupcake item</caption>
+                                <span>$10</span>
+                            </div>
+                        </div> <!--End of box-->
+                        <!--End of 2nd Row-->
+
+                        <div class="box" data-title="Chin-Chin item" data-num="16">
+                            <img src="imgShopCart/Nigerian Chin Chin 2.jpg" alt="Cake">
+                                <div class="cartIcon"></div>
+                            <div class="details">
+                                <caption>Chin-Chin item</caption>
+                                <span>$16</span>
+                            </div>
+                        </div> <!--End of box-->
+                        <div class="box" data-title="Doughnut item" data-num="22">
+                            <img src="imgShopCart/Simpsons-Doughnuts-4238-Copy-1-500x375.jpg" alt="doughnut">
+                                <div class="cartIcon"></div>
+                            <div class="details">
+                                <caption>Doughnut item</caption>
+                                <span>$22</span>
+                            </div>
+                        </div> <!--End of box-->
+                        <div class="box" data-title="Decoration Cake item" data-num="50">
+                            <img src="imgShopCart/cakelike.jpg" alt="Sweet">
+                                <div class="cartIcon"></div>
+                            <div class="details">
+                                <caption>Decoration Cake item</caption>
+                                <span>$50</span>
+                            </div>
+                        </div> <!--End of box-->
+                        <!--End of 3rd Row-->
+
+                        <div class="box" data-title="Chocolate Cake item" data-num="40">
+                            <img src="imgShopCart/chocolate.jpg" alt="Cake">
+                                <div class="cartIcon"></div>
+                            <div class="details">
+                                <caption>Chocolate Cake item</caption>
+                                <span>$40</span>
+                            </div>
+                        </div> <!--End of box-->
+                        <div class="box" data-title="Doughnut item" data-num="30">
+                            <img src="imgShopCart/doughnut.jpg" alt="doughnut">
+                                <div class="cartIcon"></div>
+                            <div class="details">
+                                <caption>Doughnut item</caption>
+                                <span>$30</span>
+                            </div>
+                        </div> <!--End of box-->
+                        <div class="box" data-title="Chocolate Cake item" data-num="25">
+                            <img src="imgShopCart/easy_chocolate_cake_31070_16x9.jpg" alt="Sweet">
+                                <div class="cartIcon"></div>
+                            <div class="details">
+                                <caption>Chocolate Cake item</caption>
+                                <span>$25</span>
+                            </div>
+                        </div> <!--End of box-->
+                        <!--End of 4th Row-->
+
+                    </div> <!--End of Collections-->
+                </div>
+            </section>
+            <footer>
+                <section class="contain">
+                    <div class="bouns"></div>
+                    <div class="bouns"></div>
+                    <div class="bouns"></div>
+                </section>
+            </footer>
+        </div> <!--End of Wrapper-->
+    </body>
+    <script src="react.js"></script>
+</html>

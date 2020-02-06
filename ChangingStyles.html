@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ChangeStylesofDiv</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" />
+</head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .facebook{
+            width:100%;
+            margin-left: -20px;
+            padding: 2%;
+            height: 80px;
+            background: linear-gradient(blue,white,blue);
+        }
+        .apple{
+            width:30%;
+            margin-left: -20px;
+            height: 200px;
+            padding: 2%;
+            /*background: linear-gradient(pink,cyan)*/
+            background-color: chartreuse;
+        }
+        .microsoft{
+            width:80%;
+            margin-left: 80px;
+            height: 200px;
+            background: linear-gradient(red,maroon)
+        }
+        button{
+            margin-top: 20px;
+            font-size: 2rem;
+            background-color: burlywood;
+            border: none;
+            padding:10px;
+        }
+    </style>
+<body>
+    <div class="facebook">Facebook is great</div>
+    <div class="apple">Apple is a Fine Laptop</div>
+    <div id="conp" class="microsoft">Microsoft Computers rule Africa</div>
+    <button onclick="transform()">Controller</button>
+    <button onclick="help()">Random Color</button>
+    
+</body>
+    <script>
+        function transform(){
+            document.getElementsByTagName("div")[0].style.marginLeft = '-350px';
+            document.getElementsByTagName("div")[1].style.marginLeft = '900px';
+            document.getElementsByTagName("div")[2].style.marginTop = '400px';
+            document.getElementById("conp").style.backgroundColor = 'yellow';
+        }
+        var colorCode = 'rgb(19,150,66)';
+        function help(){
+            var x, y, z, appleColor;
+            x = Math.round(Math.random()*256);
+            y = Math.round(Math.random()*256);
+            z = Math.round(Math.random()*256);
+            //'rgb('x+,+y,z+')';
+            appleColor = 'rgb('+ x + ',' + y + ',' + z + ')';
+            document.getElementsByClassName("apple")[0].style.backgroundColor = appleColor;
+            document.getElementsByClassName("apple")[0].innerHTML = appleColor;
+        }
+    </script>
+</html>

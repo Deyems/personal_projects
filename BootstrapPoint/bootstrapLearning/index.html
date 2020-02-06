@@ -1,0 +1,1769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <script src="../jquery-3.3.1.slim.min.js"></script>
+    <script src="../popper.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+    <title>BootStrap Examples</title>
+    
+</head>
+<body style="position: relative;" data-spy="scroll" data-target=".navbar" data-offset="200">
+    <style>
+/*
+        ul{
+            margin: 5px 0;
+        }
+*/
+        
+    </style>
+    
+    <div class="container-fluid" style="position: relative">
+        
+    </div> <!--End of Container-->
+<!--
+        <br><br><br><br><br><br>
+        <body style="position: relative;" data-spy="scroll" data-target=".navbar" data-offset="50">
+            <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+                <ul class="navbar-nav">
+                    <li class="nav-item border border-light">
+                        <a class="nav-link" href="#section1">Links One</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">Links Two</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">Links Three</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section4">Links Four</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section5">Links Five</a>
+                    </li>
+                </ul>
+                <div class="shadow-sm p-4 my-2 bg-white">Small shadow</div>
+            </nav>
+            
+            <div id="section1" class="container-fluid bg-success" style="padding-top:70px; padding-bottom:70px">
+                <h3>Section One</h3>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                <div class="container my-3">
+                    <span class="sr-only">Invisible on small screens</span>
+                    
+                    <div class="embed-responsive embed-responsive-1by1">
+                        <iframe class="embed-responsive-item" src="images/Instant%20MessagingA2P-Hero-01.jpg"></iframe>
+                    </div>
+                    <br>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="images/Instant%20MessagingA2P-Hero-01.jpg"></iframe>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div id="section2" class="container-fluid bg-info" style="padding-top:70px; padding-bottom:70px">
+                <h3>Section Two</h3>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            </div>
+            
+            <div id="section3" class="container-fluid bg-danger" style="padding-top:70px; padding-bottom:70px">
+                <h3>Section Three</h3>
+                <p class="py-2 text-light shadow-lg">Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                
+            </div>
+            
+            <div id="section4" class="container-fluid bg-secondary" style="padding-top:70px; padding-bottom:70px">
+                <h3>Section Four</h3>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            </div>
+            
+            <div id="section5" class="container-fluid bg-primary" style="padding-top:70px; padding-bottom:70px">
+                <h3>Section Five</h3>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            </div>
+            
+        
+        </body>
+-->
+    
+<!--
+        <h1>Let Us create Wonderful Dialog Boxes</h1>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#demo">
+            Open Gift
+        </button>
+        
+        <div class="modal" id="demo">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Coupon Code</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">Modal body...</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button type="button" data-target="#modalCon" data-toggle="modal" class="btn btn-success">
+            Check
+        </button>
+        
+        <div class="modal fade" id="modalCon">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Welcome to Rednap</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-info">Are You sure you want to close tab?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Horror">Hover Over me</a>
+        
+        <button type="button" data-trigger="focus" data-placement="top" title="Birthday!" class="btn bt-danger" data-toggle="popover" data-content="Congratulations! Happy burthday">See Tips</button>
+-->
+    
+        
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();
+                $('[data-toggle="popover"]').popover();
+            });
+        </script>
+    
+<!--
+            <div class="carousel slide" data-ride="carousel" id="slider">
+                
+                <div id="slider" class="carousel-indicators">
+                    <li data-target="#slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#slider" data-slide-to="1"></li>
+                    <li data-target="#slider" data-slide-to="2"></li>
+                </div>
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/app-cellphone-device-870903.jpg">
+                        <div class="carousel-caption text-dark">
+                            <h3 class="display3">Messaging Platform</h3>
+                            <p>We have wonders on our platform</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Instant%20MessagingA2P-Hero-01.jpg">
+                        
+                        <div class="carousel-caption">
+                            <h3 class="display1">Letting Us here</h3>
+                            <p>We have wonders on our platform</p>
+                        </div>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/message%20header.png">
+                        
+                        <div class="carousel-caption text-dark">
+                            <h3 class="display4">Messaging Platform</h3>
+                            <p>Team building success</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <a href="#slider" class="carousel-control-prev">
+                    <span class="carousel-control-prev-icon" data-slide="prev"></span>
+                </a>
+                <a href="#slider" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+-->
+    
+<!--
+        <div id="slides" class="carousel slide" data-ride="carousel">
+            Indicators
+            <ul class="carousel-indicators">
+                <li data-target="#slides" data-slide-to="1"></li>
+                <li data-target="#slides" data-slide-to="2"></li>
+                <li data-target="#slides" data-slide-to="3"></li>
+            </ul>
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/chicago.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/la.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/ny.jpg">
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" data-slide="prev" href="#slides">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#slides" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            
+        </div>
+-->
+        
+<!--        <br><br><br><br><br><br>-->
+        
+<!--
+        <div class="carousel slide" id="slideshow" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#slideshow" class="active" data-slide-to="0"></li>
+                <li data-target="#slideshow" data-slide-to="1"></li>
+                <li data-target="#slideshow" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/la.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/chicago.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/ny.jpg">
+                </div>
+            </div>
+            
+            <a href="#slideshow" class="carousel-control-prev" data-slide="prev">
+                <span class="bg-success carousel-control-prev-icon"></span>
+            </a>
+            <a href="#slideshow" class="carousel-control-next" data-slide="next">
+                <span class="bg-success carousel-control-next-icon"></span>
+            </a>
+        </div>
+-->
+        
+        
+<!--
+        <div>
+            <form action="#">
+                <div class="custom-control custom-checkbox">
+                    <input id="male" type="checkbox" class="custom-control-input" name="male">
+                    <label for="male" class="custom-control-label">Item1</label>
+                </div>
+                
+                <div class="custom-control custom-checkbox custom-control-inline">
+                    <input id="female" type="checkbox" class="custom-control-input" name="male">
+                    <label for="female" class="custom-control-label">Item2</label>
+                </div>
+                
+                
+                <div class="custom-control custom-checkbox custom-control-inline">
+                    <input id="opt1" name="opt1" type="checkbox" class="custom-control-input">
+                    <label for="opt1" class="custom-control-label">Month</label>
+                </div>
+                
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input id="sex" type="radio" value="sex" name="sex" class="custom-control-input">
+                    <label for="sex" class="custom-control-label">Agenda1</label>
+                </div>
+                
+            </form>
+            
+            <form action="#">
+                <select name="car" class="custom-select mb-4">
+                    <option selected>Select State</option>
+                    <option>Volvo</option>
+                    <option>Audi</option>
+                    <option>Fiat</option>
+                </select>
+                
+                <select name="vehicles" class="mb-3 custom-select custom-select-lg">
+                    <option>Toyota</option>
+                    <option>Mazda</option>
+                    <option>Corolla</option>
+                </select>
+                
+                <div>
+                    <label for="points">Score</label>
+                    <input id="points" type="range" class="custom-range" name="points">
+                </div>
+                
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input">
+                    <label for="customFile" class="custom-file-label">Choose file</label>
+                </div>
+                
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input">
+                    <label for="pass" class="custom-file-label">Select image</label>
+                </div>
+                
+            </form>
+            
+        </div>
+-->
+<!--
+            <div>
+                <form action="#" class="border mb-3">
+                    <div class="form-group">
+                        <div class="input-group mb-3 input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">@</span>
+                            </div>
+                            <input type="text" name="email" class="form-control">
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <input type="text" placeholder="Email Address" class="form-control" name="username">
+                        <div class="input-group-append">
+                            <span class="input-group-text">@example.com</span>
+                        </div>
+                    </div>
+                    
+                </form>
+                
+                <form action="#" class="mb-3">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Person</span>
+                        </div>
+                        <input type="email" placeholder="Email" class="form-control" name="email">
+                        <input type="password" placeholder="Password" class="form-control" name="pwd">
+                    </div>
+                </form>
+                
+                <form action="#" class="mb-3">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <input type="checkbox">
+                            </span>
+                        </div>
+                        <input type="email" placeholder="Email" class="form-control" name="email">
+                        <input type="password" placeholder="Password" class="form-control" name="pwd">
+                    </div>
+                </form>
+                
+                <form action="#" class="mb-3">
+                    <div class="input-group">
+                        <input type="text" placeholder="Search Database" class="form-control">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-warning">Ok</button>
+                            <input type="reset" value="&times;" class="input-group-text btn btn-warning">
+                        </div>
+                    </div>
+                </form>
+                
+                <form action="#">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+
+                            <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">Dropdown</button>
+                            
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item"> List One</a>
+                                <a href="#" class="dropdown-item"> List Two</a>
+                                <a href="#" class="dropdown-item"> List Three</a>
+                            </div>
+                            
+                        </div>
+                        <input type="text" placeholder="choose State" class="form-control">
+                    </div>
+                </form>
+                
+            </div>
+-->
+<!--
+        <div>
+            <form action="#">
+                <div class="form-group">
+                    <label for="usr">Username</label>
+                    <input id="usr" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">password</label>
+                    <input id="pwd" type="password" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label for="theDate">Date:</label>
+                    <input id="theDate" type="date" class="form-control">
+                </div>
+                
+                <div class="form-check">
+                    <div class="form-check">
+                        <label for="gen" class="form-check-label">
+                            <input id="gen" type="checkbox" class="form-check-input">Generator
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label for="stove" class="form-check-label">
+                            <input id="stove" type="checkbox" class="form-check-input">Stove
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label for="gas" class="form-check-label">
+                            <input id="gas" type="checkbox" class="form-check-input">Gas
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-check">
+                    <div class="form-check-inline">
+                        <label for="opt1" class="form-check-label">
+                            <input id="opt1" type="radio" name="option" class="form-check-input">Danger
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label for="opt2" class="form-check-label">
+                            <input id="opt2" type="radio" name="option" class="form-check-input">Success
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label for="opt3" class="form-check-label">
+                            <input id="opt3" type="radio" name="option" class="form-check-input">Winning
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="state">State:</label>
+                    <select name="state" id="state" class="form-control">
+                        <option value="abia">Abia</option>
+                        <option value="adamawa">Adamawa</option>
+                        <option value="akwa">Akwa</option>
+                        <option value="bauchi">Bauchi</option>
+                        <option value="ondo">Ondo</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="passport">Upload Passport</label>
+                    <input id="passport" type="file" class="form-control-file border">
+                </div>
+                
+            </form>
+        </div>
+-->
+<!--
+        <form action="#">
+            <div class="form-group">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" class="form-control">
+            </div>
+            
+            <div class="form-group">
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" class="form-control">
+            </div>
+            
+            <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" class="form-control">
+            </div>
+            
+            <div class="form-group">
+            <label for="passkey">Password:</label>
+            <input type="password" id="passkey" class="form-control">
+            </div>
+            
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    Remember Me
+                </label>
+                
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+            
+        </form>
+        
+        <form class="form-inline" action="#">
+            <label for="email" class="mr-sm-2">Email Address:</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" id="email" placeholder="Enter Email">
+            <label for="pwd" class="mr-sm-2">Pasword:</label>
+            <input type="password" class="form-control mb-2 mr-sm-2" id="pwd">
+            <div class="form-check mb-2 mr-sm-2">
+                <label for="check" class="form-check-label">
+                    <input id="check" class="form-check-input" type="checkbox"> Remember me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-success mb-2">Submit</button>
+            
+        </form>
+        
+        <form action="#">
+            <label for="email2" class="mr-sm-2">Email:</label>
+            <input id="email2" type="email" class="form-control">
+            <label for="pwd2">Password:</label>
+            <input id="pwd2" type="password" class="form-control">
+            <div class="form-check">
+                <label for="checker" class="form-check-label">
+                    <input id="checker" type="checkbox" class="form-check-input">Remember Me
+                </label>
+            </div>
+            
+            <div class="form-check">
+                <label for="radiobtn" class="mr-sm-4">
+                    <input type="radio" name="sex" class="form-radio-input mr-sm-4">Male
+                </label>
+                
+                <label for="radiobtn">
+                    <input type="radio" name="sex" class="form-radio-input">Female
+                </label>
+                
+            </div>
+            
+        </form>
+        <br><br><br><br>
+        
+        <form action="#">
+            <div class="form-group">
+                <label for="comment">Comment</label>
+                <textarea id="comment" rows="5" class="form-control" name="comment"></textarea>
+            </div>
+            <div>
+                <label for="msg">Message:</label>
+                <input type="text" class="form-control" id="msg">
+            </div>
+        </form>
+-->
+        
+<!--
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="#" class="navbar-brand">
+                <img class="rounded-circle img-fluid" src="images/app-cellphone-device-870903.jpg" width="70px">
+            </a>
+            
+            <button class="navbar-toggler" data-target="#dropOption" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="dropOption">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Top</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Scroll</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Bottom</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Navigation</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </nav>
+        
+        
+        <nav class="navbar navbar-expand-lg bg-success sticky-top navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="images/app-cellphone-device-870903.jpg" width="55px" class="rounded">
+            </a>
+            
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#menutray">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="menutray">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">School</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Church</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+        
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <a class="navbar-brand">
+                <img width="60" src="images/Messaging%20PeopleFotolia_113800136_Subscription_Monthly_XXL.jpg">
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#menuDrop">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="menuDrop">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Chop One</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Chop One</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Chop One</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">World</a>
+                            <a href="#" class="dropdown-item">Believers</a>
+                            <a href="#" class="dropdown-item">Hope</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Chop One</a>
+                    </li>
+                    
+                    <div>
+                        
+                        <form class="form-inline" action="#">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">@</span>
+                                </div>
+                                <input class="form-control mr-sm-2" placeholder="Enter your Search" type="text">
+                                <button class="btn btn-secondary">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </ul>
+            </div>
+        </nav>
+        
+        <nav class="navbar navbar-expand-sm bg-info">
+            <form class="form-inline" action="#">
+                <input type="text" placeholder="Enter your name" class="form-control mr-sm-2">
+                <button type="submit" class="btn btn-success">Go</button>
+            </form>
+        </nav>
+-->
+        
+<!--
+        <p>Lola is a kind of fruit, sweet like fanta link like tomato</p>
+        <p>Lola is a kind of fruit, sweet like fanta link like tomato</p>
+        <p>Lola is a kind of fruit, sweet like fanta link like tomato</p>
+        <p>Lola is a kind of fruit, sweet like fanta link like tomato</p>
+        <p>Lola is a kind of fruit, sweet like fanta link like tomato</p>
+        <p>Lola is a kind of fruit, sweet like fanta link like tomato</p>
+        <p>Lola is a kind of fruit, sweet like fanta link like tomato</p>
+        <p>Lola is a kind of fruit, sweet like fanta link like tomato</p>
+        <p>Lola is a kind of fruit, sweet like fanta link like tomato</p>
+        <p>Lola is a kind of fruit, sweet like fanta link like tomato</p>
+        <p>Lola is a kind of fruit, sweet like fanta link like tomato</p>
+        <p>Lola is a kind of fruit, sweet like fanta link like tomato</p>
+        <p>Lola is a kind of fruit, sweet like fanta link like tomato</p>
+        <p>Lola is a kind of fruit, sweet like fanta link like tomato</p>
+        <p>Lola is a kind of fruit, sweet like fanta link like tomato</p>
+-->
+        
+    
+<!--
+        <nav class="navbar navbar-expand-lg justify-content-center bg-light">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Linker One</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Linker Two</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Linker Three</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Linker Four</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <nav class="navbar navbar-expand-lg bg-success navbar-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Alert</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Alert Come</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Grade Andela</a>
+                </li>
+            </ul>
+        </nav>
+        
+        
+        <nav class="navbar navbar-expand-sm">
+            <a href="#" class="navbar-brand">
+                <img src="images/Instant%20MessagingA2P-Hero-01.jpg" width="70px" alt="smsbrand">
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cooker</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Longer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pottere</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">launch</a>
+                </li>
+            </ul>
+        </nav>
+
+-->
+<!--
+        <div>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-toggle="tab">Current</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#next" class="nav-link" data-toggle="tab">Next</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#previous" class="nav-link" data-toggle="tab">Previous</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#here" class="nav-link" data-toggle="tab">Unique</a>
+                </li>
+            </ul>
+            
+            <div class="tab-content">
+                <div class="tab-pane container" id="home"><h3>Content on tab 1</h3></div>
+                <div class="tab-pane container" id="next"><h3>Content on tab 2</h3></div>
+                <div class="tab-pane container" id="previous"><h3>Content on tab 3</h3></div>
+                <div class="tab-pane container" id="here"><h3>Content on tab 4</h3></div>
+            </div>
+            
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link" data-toggle="tab">Portfolio One</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio2" class="nav-link active" data-toggle="tab">Portfolio One</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#portfolio3" class="nav-link" data-toggle="tab">Portfolio One</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio4" class="nav-link" data-toggle="tab">Portfolio One</a>
+                </li>
+            </ul>
+            
+            <div class="tab-content">
+                <div class="tab-pane container " id="portfolio">First Tab stuff</div>
+                <div class="tab-pane container fade" id="portfolio2">Second Tab stuff</div>
+                <div class="tab-pane container fade" id="portfolio3">Third Tab stuff</div>
+                <div class="tab-pane container fade" id="portfolio4">Fourth Tab stuff</div>
+            </div>
+            
+            
+            
+        </div>
+-->
+    
+        <!--HAVING COLLAPSIBLE ITEMS-->
+<!--
+        <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#demo">State</button>
+        <div id="demo" class="collapse">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore 
+            magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut 
+            aliquip ex ea commodo consequat.
+        </div>
+        
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="collapse" data-target="#navbar"></button>
+        <div id="navbar" class="collapse">
+            <div class="card"> <a href="#" class="btn btn-primary">Home</a> </div>
+            <div class="card"><a href="#" class="btn btn-info">About Us</a></div>
+            <div class="card"><a href="#" class="btn btn-warning">Control Room</a></div>
+        </div>
+-->
+    
+<!--
+            <h2 class="display-3">More Dynamic Dropdown</h2>
+            
+            <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Drop One</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Click Me</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item">Post</a>
+                    <a class="dropdown-item">GET</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item">Send</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Time Bomb</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Paranoid</a>
+            </li>
+            </ul>
+-->
+    
+<!--
+        <div id="accordion">
+            
+            <div class="card">
+                <div class="card-header">
+                    <a href="#collapseOne" class="card-link" data-toggle="collapse"> Item #1</a>
+                </div>
+                <div id="collapseOne" data-parent="#accordion" class="collapse">
+                    <div class="card-body">Lorem ipsum......</div>
+                </div>
+            </div> END OF CARD CLASS
+            
+            <div class="card">
+                <div class="card-header">
+                    <a href="#collapseTwo" data-toggle="collapse" class="collapsed card-link">Some Text Here</a>
+                </div>
+                
+                <div class="collapse" id="collapseTwo" data-parent="#accordion">
+                    <div class="card-body">In the card body</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <a href="#lola" data-toggle="collapse" class="card-link">Control room</a>
+                </div>
+                
+                <div id="lola" class="collapse" data-parent="#accordion">
+                    <div class="card-body"> Love is a note</div>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-header">
+                    <a href="#collapsefour" data-toggle="collapse" class="card-link">Linker to drops </a>
+                </div>
+                <div id="collapsefour" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Some content in drop down</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+-->
+    
+<!--
+            <ul class="nav nav-tabs justify-content-end">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Link 3</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link disabled">Disabled Link</a>
+                </li>
+                
+            </ul>
+            
+            <ul class="nav nav-tabs flex-column">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link disabled">Home</a>
+                </li>
+            </ul>
+-->
+            
+<!--
+            <ul class="nav nav-tabs nav-justified">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link disabled">Duties</a>
+                </li>
+            </ul>
+-->
+    
+<!--
+        <h3>Group buttons with Dropdown</h3>
+        
+        <div class="btn-group">
+            <button type="button" class="btn btn-secondary">Phone</button>
+            <button type="button" class="btn btn-warning">Accessories</button>
+            
+            <button type="button" class="btn btn-secondary">Structure</button>
+            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+            <div class="dropdown-menu">
+                <a href="" class="dropdown-item">Words</a>
+                <a href="#" class="dropdown-item">Mason</a>
+                <a href="#" class="dropdown-item">Riot</a>
+            </div>
+        </div>
+        
+        
+        <div class="btn-group-vertical dropright">
+            <button type="button" class="btn btn-primary">Context 1</button>
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Context 2</button>
+            <div class="dropdown-menu ">
+                <a href="#" class="dropdown-item">One time</a>
+                <a href="#" class="dropdown-item">Two time</a>
+                <a href="#" class="dropdown-item">Three time</a>
+            </div>
+            <button type="button" class="btn btn-primary">Context 3</button>
+        </div>
+-->
+    
+<!--
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Dropdown Button
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a href="#" class="dropdown-item">Link 2</a>
+                <a href="#" class="dropdown-item">Link 3</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+            Show More
+            </button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Job 3</a>
+                <a href="#" class="dropdown-item">Job 5</a>
+                <a href="#" class="dropdown-item">Job 7</a>
+                <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">Job 9</a>
+            </div>
+        </div>
+        
+        <h3>Drop downs with Heading</h3>
+        <div class="dropdown dropright">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Schools</button>
+            <div class="dropdown-menu">
+                <div class="dropdown-header">Group One</div>
+                <a href="#" class="dropdown-item text-success">Item One</a>
+                <a href="#" class="dropdown-item active">Item Two</a>
+                <div class="dropdown-header">Group Two</div>
+                <a href="#" class="dropdown-item">Item Three</a>
+                <a href="#" class="dropdown-item disabled">Item Four</a>
+            </div>
+        </div>
+    
+        <div class="dropdown dropleft float-right">
+            <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Wisdom</button>
+            <div class="dropdown-menu">
+                <div class="dropdown-header">Religious</div>
+                <a class="dropdown-item" href="#">Moral hIgh</a>
+                <a class="dropdown-item" href="#">Moral story</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Continent</a>
+            </div>
+        </div>
+        
+        
+        <div class="dropup">
+            <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Wisdom is very a large body of reservoir</button>
+            <div class="dropdown-menu dropdown-menu-right">
+                <div class="dropdown-header">Religious</div>
+                <a class="dropdown-item" href="#">Moral hIgh</a>
+                <a class="dropdown-item" href="#">Moral story</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Continent</a>
+            </div>
+        </div>
+-->
+    
+<!--
+        <div class="card-group">
+            
+            <div class="card">
+                <div class="card-body">
+                    <h3>Love rAin</h3>
+                    <p class="card-text">There is a river here!</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-body text-center">
+                    <h3 class="card-title">Love rAin</h3>
+                    <p class="card-text">There is a river here!</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="display-4">Love rAin</h3>
+                    <p class="card-text">There is a river here!</p>
+                </div>
+            </div>
+        </div>
+-->
+    
+<!-- USING CARD CLASS TO DISPLAY ITEMS IN A FLEX BOX STYLE
+            <div class="card">
+                <div class="card-body bg-info">
+                    <p class="card-text">Lorem text in here</p>
+                    <p class="card-text">Lorem text in here</p>
+                    <p class="card-text">Lorem text in here</p>
+                </div>
+            </div>
+            
+            <div class="card bg-success">
+                <div class="card-body">
+                    <p class="card-text">Lorem text in here</p>
+                </div>
+            </div>
+            
+            <div class="card bg-secondary">
+                <div class="card-body">
+                    <p class="card-text">Lorem text in here</p>
+                </div>
+            </div>
+            
+            <div class="card bg-primary">
+                <div class="card-body">
+                    <p class="card-text">Lorem text in here</p>
+                </div>
+            </div>
+-->
+    
+<!--
+        <!-- FORMING CARDS OF BOXES THAT ARE RESPONSIVE
+        <div class="card-columns">
+            <div class="card bg-primary">
+                <div class="card-body text-center">
+                    <p class="card-text">Ist Card Text here</p>
+                </div>
+            </div>
+            
+            <div class="card bg-warning">
+                <div class="card-body text-center">
+                    <p class="card-text">2nd Card Text here</p>
+                </div>
+            </div>
+            
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <p class="card-text">3rd CardText here</p>
+                    <p class="card-text">3rd CardText here</p>
+                    <p class="card-text">3rd CardText here</p>
+                    <p class="card-text">3rd CardText here</p>
+                </div>
+            </div>
+            
+            <div class="card bg-secondary">
+                <div class="card-body">
+                    <p class="card-text">4th Card Text here</p>
+                </div>
+            </div>
+            
+            <div class="card bg-success">
+                <div class="card-body">
+                    <p class="card-text">5th Card Text here</p>
+                </div>
+            </div>
+            
+        </div>
+-->
+    
+<!--
+        <div class="card" style="width:500px">
+            <img class="card-img-top" src="images/Instant%20MessagingA2P-Hero-01.jpg" width="">
+            <div class="card-img-overlay text-light">
+                <h4 class="card-title display-3">John Doe</h4>
+                <p class="card-text"> Some Text have been given here</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+        </div>
+        <p class="display-3">CROSS OVER</p>
+        <h3>Using Card Images at Top and Bottom</h3>
+        <div class="card" style="width: 300px">
+            <img src="images/message%20header.png" alt="bulksms" class="card-img-top img-thumbnail">
+            <div class="card-body">
+                <h4 class="card-title">User name</h4>
+                <p>Inner text is good for your daily earnings</p>
+                <a href="#" class="btn btn-success">More</a>
+            </div>
+        </div>
+        
+        <div>Adding Images Below in the Card</div>
+        <div class="card" style="width:350px">
+            <div class="card-body">
+                <h4 class="card-title">Football Lover</h4>
+                <div>
+                    <a href="#" class="card-link">Next</a> 
+                    <a href="#" class="card-link">Next</a>
+                </div>
+                <a href="#" class="btn btn-info">View Profile</a>
+            </div>
+            <img src="images/app-cellphone-device-870903.jpg" width="100%" alt="faceoff" class="card-img-bottom">
+        </div>
+        
+        <h3>How to Create Cards in Bootstrap 4</h3>
+        <div class="card">
+            <div class="card-header bg-secondary">Card Head</div>
+            <div class="card-body bg-warning">
+                <h2 class="card-title">Card Title</h2>
+                <p class="card-text">Example text added!</p>
+                <a href="#" class="card-link">Link in card</a>
+            </div>
+            <div class="card-footer">Card footer</div>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">Card Title</h2>
+            <p class="card-text">Example text added!</p>
+            <a href="#" class="card-link">Link in card</a>
+        </div>
+-->
+    
+<!--
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">Inbox
+                    <span class="badge badge-info badge-pill">30</span>
+                </li>
+                <li class="list-group-item">Outbox
+                    <span class="badge badge-info badge-pill">10</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Spam
+                    <span class="badge badge-info badge-pill">20</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div>
+            <h3>Create List Items with Various options</h3>
+        </div>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">Services</a>
+            <a href="#" class="list-group-item list-group-item-action">Services</a>
+            <a href="#" class="list-group-item list-group-item">Services</a>
+        </div>
+        <div>
+            <p>Remove list ITEM borders</p>
+            <div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Pagination</li>
+                    <li class="list-group-item">Jumbotron</li>
+                    <li class="list-group-item border">iMages</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-success list-group-item-action">Pagination</li>
+                <li class="list-group-item">Jumbotron</li>
+                <li class="list-group-item list-group-item-warning ">iMages</li>
+            </ul>
+        </div>
+-->
+    
+<!--
+            <p>Pagination in Bootstrap</p>
+            <div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Number One</a>
+                    <a href="#" class="list-group-item list-group-item-action">Number Two</a>
+                    <a href="#" class="list-group-item list-group-item-action">Number Three</a>
+                </div>
+                <p>Common List Items</p>
+                <ul class="list-group">
+                    <li class="list-group-item">First item</li>
+                    <li class="list-group-item">Second item</li>
+                    <li class="list-group-item">Third item</li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item">First</li>
+                    <li class="list-group-item active">Second</li>
+                    <li class="list-group-item">Third</li>
+                </ul>
+            </div>
+-->
+    
+<!--
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#">Photos</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#">Summer 17</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#">Italy</a>
+                    </li>
+                    <li class="breadcrumb-item active">Rome
+                    </li>
+                </ul>
+                
+                <ul class="pagination pagination-md">
+                    <li class="page-item disabled">
+                        <a href="#" class="page-link">Previous</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">1</a>
+                    </li>
+                    <li class="page-item active">
+                        <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">Next</a>
+                    </li>
+                </ul>
+                
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a href="#" class="page-link">Previous</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">1</a>
+                    </li>
+                    <li class="page-item active">
+                        <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">Next</a>
+                    </li>    
+                </ul>
+                
+                <ul class="pagination justify-content-end">
+                    <li class="page-item">
+                        <a href="#" class="page-link">Previous</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">1</a>
+                    </li>
+                    <li class="page-item active">
+                        <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">Next</a>
+                    </li>    
+                </ul>
+-->
+    
+<!--
+        <div class="progress">
+            <div class="progress-bar"> 40%</div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-success" style="width: 50%"> 50%</div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-info" style="width: 70%"> 70%</div>
+        </div>
+        
+        <div class="progress border">
+            <div class="progress-bar bg-light" style="width: 35%"> 70%</div>
+        </div>
+        
+        <div class="progress border">
+            <div class="progress-bar progress-bar-striped bg-secondary" style="width: 35%"> 70%</div>
+        </div>
+        
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 55%">55%</div>
+        </div>
+        
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width: 36%">36%</div>
+            <div class="progress-bar progress-bar-striped bg-warning" style="width: 26%">26%</div>
+            <div class="progress-bar bg-success" style="width: 34%">34%</div>
+        </div>
+-->
+        
+<!--
+        <div>
+            <h1>Example head <span class="badge badge-secondary">new</span></h1>
+            <span class="badge badge-primary">new</span>
+            <span class="badge badge-secondary">new</span>
+            <span class="badge badge-info">new</span>
+            <h3><span class="badge badge-warning">new</span></h3>
+        </div>
+        <span class="badge badge-pill badge-primary">Default</span>
+        <span class="badge badge-pill badge-success">Success</span>
+        <div>
+            <p>Try out Badges in button</p>
+            <button class="btn btn-success">Notifications
+                <span class="badge badge-pill badge-light text-black">2</span>
+            </button>
+        </div>
+-->
+<!--
+        <p>Grouping Buttons Together</p>
+        
+        <div class="btn-group">
+            <a href="#" class="btn btn-primary">Apple Phone</a>
+            <a href="" class="btn btn-primary">Samsung Phone</a>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Sony Phone</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Tablet</a>
+                    <a class="dropdown-item" href="#">Smartphone</a>
+                </div>
+            </div>
+            
+        </div>
+        <div><h2>Creating Split Button Dropdown</h2></div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Home</button>
+            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                <span class="caret"></span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Settings</a>
+                <a class="dropdown-item" href="#">logout</a>
+            </div>
+        </div>
+        
+        <div>
+            <h3>Create Vertical Dropdown Group</h3>
+        </div>
+        <div class="btn-group-vertical">
+            <div class="btn-group">
+                <button class="btn btn-success" type="button">Home</button>
+                <button class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" type="button"></button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Toyota</a>
+                    <a href="#" class="dropdown-item">Hilux</a>
+                </div>
+            </div>
+            <button class="btn btn-success" type="button">Vehicles</button>
+        </div>
+        <div class="btn-group">
+            <div class="btn btn-outline-primary">Blessings</div>
+            <div class="btn btn-outline-primary">Offerings</div>
+            <div class="btn btn-outline-primary">Promotion</div>
+        </div>
+        <div class="btn-group">
+            <div class="btn btn-outline-primary">Blessings</div>
+            <div class="btn btn-outline-primary">Offerings</div>
+            <div class="btn btn-outline-primary">Promotion</div>
+        </div>
+-->
+    
+<!--
+        <div class="btn-group btn-group-lg">
+            <button type="button" class="btn btn-outline-primary">Linker1</button>
+            <button type="button" class="btn btn-outline-success">Linker2</button>
+            <button type="button" class="btn btn-outline-warning">Linker3</button>
+        </div>
+-->
+        
+<!--
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-success">Linker1</button>
+            <button type="button" class="btn btn-success">Linker2</button>
+            <button type="button" class="btn btn-success">Linker3</button>
+        </div>
+-->
+<!--
+        <div>
+            <button type="button" class="btn btn-success active">Active Success</button>
+            <a href="#" class="btn btn-primary disabled">Disabled Link</a>
+            <button type="submit" class="btn btn-outline-success active">Lets See</button>
+        </div>
+-->
+<!--
+        <div>
+            <button type="button" class="btn btn-primary btn-block">Full-width Button</button>
+        </div>
+        <div>
+            <button type="button" class="btn disabled">Go Back</button>
+        </div>
+-->
+<!--
+        <div>
+            <p>Using Btn Outline Classes to style</p>
+            <div>
+                <button type="button" class="btn btn-outline-light text-dark btn-sm">Oulined Button</button>
+            </div>
+            
+            <p>Commanding Outlined Input class</p>
+            <div>
+                <input type="submit" class="btn btn-outline-info btn-block" value="Login">
+                <input type="file" class="btn btn-outline-success btn-lg">
+            </div>
+        </div>
+-->
+        
+<!--
+        <p>Giving buttons btn Class</p>
+        <div>
+            <p>Handling of Buttons in BootStrap</p>
+            <button type="button" class="btn">Basic/Default</button>
+            <button type="button" class="btn btn-primary">Primary type</button>
+            <button type="button" class="btn btn-secondary">Secondary type</button>
+            <button type="button" class="btn btn-info">Information type</button>
+            <button type="button" class="btn btn-dark">Dark type</button>
+        </div>
+-->
+        
+<!--
+        <p>Giving Links btn Class</p>
+        <div>
+            <a href="#" class="btn-primary">Link Primary</a>
+            <a href="#" class="btn btn-secondary">Link Secondary</a>
+            <a href="#" class="btn btn-info">Link info</a>
+            <a href="#" class="btn btn-warning">Link warning</a>
+        </div>
+-->
+        
+<!--
+        <p>Giving inputs btn Class</p>
+        <div>
+            <input type="button" class="btn btn-success" value="Generate">
+            <input type="submit" class="btn btn-warning" value="Submit form" placeholder="Search here">
+            <input type="text" class="btn-info" placeholder="Enter your name">
+        </div>
+-->
+
+<!--
+        <div class="jumbotron">
+            <h1 class="display-4">Use Jumbotron in Bootstrap</h1>
+            <p>Bootstrap is the Popular-most Framework</p>
+        </div>
+-->
+<!--
+    <div>
+        <p>Using alert Links to show same color with alert boxes </p>
+        
+    </div>
+-->
+<!--
+    <div class="alert alert-info alert-dismissible fade show">
+        <button type="button" data-dismiss="alert" class="close">&times;</button>
+        <p><strong>Links' Power</strong><small> is tested</small> <a href="#" class="alert-link">my tested link</a></p>
+    </div>
+-->
+    
+<!--
+    <div class="jumbotron">
+        <div class="container">
+            <h2>Bootstrap Tutors</h2>
+            <p>Most Sought After CMS framework</p>
+        </div>
+        <div class="alert alert-success">
+            <strong>Success!</strong> is a positive/Success
+        </div>
+        <div class="alert alert-warning alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Warning!</strong> is a shaky/Success
+        </div>
+        <div class="alert alert-danger">
+            <strong>Danger!</strong> is a negative/Success
+        </div>
+        <div class="alert alert-dark alert-dismissible fade show">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <p>Try out closing paragraphs</p>
+            <strong>Black is grey!</strong> is a positive/Success
+        </div>
+        
+    </div>
+-->
+<!--
+    <div class="alert alert-warning">
+        <strong>Success!</strong> is a positive/Success
+    </div>
+-->
+    
+<!--
+        <div>
+            <p>Rounded Corner image</p>
+            <img width="304" height="236" src="images/Instant%20MessagingA2P-Hero-01.jpg" class="rounded img-fluid" alt="header-img">
+            <img width="350" height="300" src="images/Messaging%20PeopleFotolia_113800136_Subscription_Monthly_XXL.jpg" class="rounded-circle img-fluid">
+            
+        </div>
+-->
+        
+<!--
+        <div>
+            <p>Circle Image</p>
+            <img width="350" height="300" src="images/Messaging%20PeopleFotolia_113800136_Subscription_Monthly_XXL.jpg" class="rounded-circle">
+            <img width="304" height="236" src="images/Instant%20MessagingA2P-Hero-01.jpg" class="rounded" alt="header-img">
+        </div>
+-->
+        
+<!--
+        <div>
+            <img width="350" height="300" src="images/message%20header.png" class="img-thumbnail">
+        </div>
+-->
+<!--
+            <h2>Basic Table</h2>
+            <div class="table-responsive">
+                <table class="table text-secondary table-bordered">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-success">
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>john@example.com</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td>Mary</td>
+                            <td>Moore</td>
+                            <td>mary@example.com</td>
+                        </tr>
+                        <tr class="table-primary">
+                            <td>Pepe</td>
+                            <td>T-pain</td>
+                            <td>pepe@example.com</td>
+                        </tr>
+                        <tr class="table-active">
+                            <td>Pepe</td>
+                            <td>T-pain</td>
+                            <td>pepe@example.com</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+-->
+            
+<!--
+        <div>
+            <p class="text-black-50">Black text with 50% Opacity</p>
+            <p class="text-white-50 bg-dark">White text with faded Opacity of 50%</p>
+        </div>
+-->
+<!--
+        <div class="bg-dark text-white">
+            <p class="text-primary">This text is Importeant using Primary class</p>
+            <p class="text-success">This is to show Success</p>
+            <p class="text-danger">I want to alert you</p>
+            <p class="text-warning">Something is here that may not work in later verisons</p>
+            <p class="text-info">I have some info for You</p>
+            <p>Normal text</p>
+            <p class="text-body">Styled looking like normal text</p>
+            <p class="text-secondary">Be careful of important INFORMATION</p>
+        </div>
+-->
+        
+<!--
+        <nav class="row bg-secondary">
+            <a href="" class="text-primary">Primary Link</a>
+            <a href="#" class="text-dark">See your Grey Link</a>
+            <a href="#" class="text-warning">Warning Link</a>
+            <a href="#" class="text-danger">Danger!!!</a>
+            <a href="#" class="text-secondary">Secondary Link</a>
+            <a href="#" class="text-info">Info Description</a>
+        </nav>
+-->
+        
+<!--
+        <div>
+            <div class="lead text-left">I am Standing Out</div>
+            <p class="small text-uppercase text-right"> I am a Small text </p>
+        </div>
+-->
+        
+<!--
+        <ul class="list-unstyled list-inline">
+            <li style="background: blue;" class="list-inline-item">Food</li>
+            <li style="background: lavender;" class="list-inline-item">Vehicles</li>
+            <li style="background: powder;" class="list-inline-item">Soup</li>
+        </ul>
+-->
+<!--
+        <div>
+            <h2>Multiple Code lines</h2>
+            <pre>
+                Text in a pre element
+                is displayed in a fix
+                font, and it preserves
+                both spaces and lines
+            </pre>
+        </div>
+-->
+        
+<!--
+        <div>
+            <h2>Font Weight and Italics</h2>
+            <p class="font-weight-bold">Bold Text</p>
+            <p class="font-weight-normal">Normal weight text</p>
+            <p class="font-weight-light">Light weight text</p>
+            <li class="font-italic">Italiced Text</li>
+        </div>
+-->
+        
+<!--
+        <div>
+            <h2>Keyboard Inputs</h2>
+            <p>I want to show input that is entered by keys using kbd element</p>
+            <p>Use <kbd>ctrl + p</kbd> to print dialog box</p>
+        </div>
+-->
+        
+<!--
+        <div>
+            <h1>Code Snippets</h1>
+            <p>Embedding code snippets with the 'code' tag</p>
+            <p>The following HTML elements: <code>span</code>,
+            <code>section</code>,<code>div</code> defines a section
+            in a document
+                <code>
+                    <p>var i = document.getElementById('#lola');</p>
+                    <p>var i = document.getElementById('#lola');</p>
+                </code>
+            </p>
+        </div>
+-->
+<!--
+        <h1 >My First Bootstrap Page</h1>
+        <h2>Bootstrap H2</h2>
+        <h3>Bootstrap h3</h3>
+        <h4>Bootstrap h4</h4>
+        <h5>Bootstrap h5</h5>
+        <h6>h6 header in Bootstrap</h6>
+        <p>This is some text</p>
+-->
+    
+<!--
+    <div class="row">
+        <div class="col-*-*"></div>
+        <div class="col-*-*"></div>
+        <div class="col-*-*"></div>
+    </div>
+-->
+        
+<!--
+    <div class="row">
+        <div class="col-sm|md|lg|xl">here me out</div>
+        <div class="col-sm|md|lg|xl">Popping</div>
+    </div>
+-->
+    
+    
+<!--        <h3>Display Headings</h3>-->
+<!--
+    <div class="row">
+        <h1 class="display-4">Display Headings</h1>
+        <h1 class="display-4">Display Headings</h1>
+        <h1 class="display-4">Display Headings</h1>
+        <h1 class="display-4">Display Headings</h1>
+    </div>
+-->
+    
+<!--
+    <div>
+        <h1>noraml h1<small>Show H1 secondary Text</small></h1>
+        <h2><small>Show H2 secondary Text</small></h2>
+        <h3><small>Show H3 secondary Text</small></h3>
+    </div>
+-->
+        
+<!--
+        <div>
+            <h1>Use of the BlockQuote</h1>
+            <blockquote class="blockquote">
+                <p>For 50 yrs, WWF has been protecting the 
+                    future of nature. The world's leading 
+                    conservation organization, WWF works in 100 countries 
+                    and is supported by 1.2 million members in the United 
+                    States and close to 5 million globally
+                </p>
+                <footer class="blockquote-footer">From WWF's website</footer>
+            </blockquote>
+        </div>
+-->
+        
+<!--
+        <div>
+            <h2>Description Lists</h2>
+            <p>The dl element indicates a description list:</p>
+            <dl>
+                <dt>Coffee</dt>
+                <dd> black hot drink</dd>
+                <dt>Milk</dt>
+                <dd> white cold drink</dd>
+            </dl>
+            <ul>
+                <li>Coker-Oat</li>
+                <li>Tapioca</li>
+                <li>Tropica</li>
+            </ul>
+        </div>
+-->
+    
+<!--
+        <div class="row">
+            <p>This sentence is to show an <mark>highlighted</mark> text</p>
+        </div>
+        
+        <div class="">
+            <h2>Abbreviations</h2>
+            <p>How to use abbr element</p>
+            <p> Fast Usage <abbr title="World Health Org">WHO</abbr> is a foundation</p>
+        </div>
+-->
+        
+<!--
+    <div class="row">
+        <div class="col-sm-3" style="background: lavender">.col</div>
+        <div class="col-sm-5" style="background: orange">Dada</div>
+        <div class="col-sm-2" style="background: lavender">Yellow</div>
+        <div class="col-sm-2" style="background: orange">Yellow</div>
+    </div>
+-->
+        
+<!--
+    <div class="row">
+        <div class="col-lg-4" style="background: #eef">.col-lg-4</div>
+        <div class="col-lg-8" style="background: skyblue">.col-lg-8</div>
+    </div>
+-->
+
+<!--
+    <div class="row">
+        <div class="col-sm-4" style="background: lavender">.col-sm-4</div>
+        <div class="col-sm-8" style="background: orange">.col-lg-8</div>
+    </div>
+-->
+</body>
+    
+</html>

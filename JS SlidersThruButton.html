@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="arrowleft"></div>
+        <div class="slide">
+
+            <div class="slider slide1">
+                <span>Image One</span>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slider slide2">
+                <span>Image Two</span>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slider slide3">
+                <span>Image Three</span>
+            </div>
+            <div class="arrowRight"></div>
+        </div>
+    </div>
+</body>
+
+<script>
+    SliderImages = document.getElementsByClassName("slider");
+    arrowLeft = document.getElementsByClassName("arrowleft")[0];
+    arrowRight = document.getElementsByClassName("arrowRight")[0];
+    current = 0;
+    function reset(){
+        for(i=0; i<SliderImages.length; i++){
+            SliderImages[i].style.display = 'none';
+        }
+    }
+
+    function startSlide(){
+    reset();
+    SliderImages[0].style.display = 'block';
+    }
+
+    function slideLeft(){
+        reset();
+        SliderImages[current - 1].style.display = 'block';
+        current--;
+    }
+
+    arrowLeft.addEventListener('click',function(){
+        if(current == 0){
+            current = SliderImages.length;
+        }
+        slideLeft();
+    });
+
+    arrowRight.addEventListener("click",function(){
+        if(current == SliderImages.length - 1){
+            current =-1;
+        }
+        slideRight();
+    });
+
+    function slideRight(){
+        reset();
+        SliderImages[current + 1].style.display = 'block';
+        current++;
+    }
+  
+    startSlide();
+</script>
+</html>

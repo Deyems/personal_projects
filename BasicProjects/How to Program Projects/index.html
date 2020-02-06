@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mini Apps </title>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="appContain">
+        <form id="simpleapp" name="simpleapp">
+          <div class="heading"><h1>Calculator App</h1></div>
+          <div class="output"></div>
+
+          <div class="entry">
+            <label for="firstDigit">First Input</label>
+            <input type="text" id="firstDigit" placeholder='Enter a valid Integer' name="firstDigit">
+          </div>
+          <div class="entry">
+            <label for="secondDigit">Second Input</label>
+            <input type="text" id="secondDigit" placeholder='Enter a valid Integer' name="secondDigit">
+          </div>
+
+          <div class="entry">
+            <button type="submit" id='sum' name="sum">Sum</button>
+            <button type="submit" id='product' name="product">Product</button>
+            <button type="submit" id='division' name="division">Divide</button>
+            <button type="submit" id='difference' name="difference">Difference</button>
+            <button type="submit" id='allGen' name="allGen">Generate All</button>
+          </div>
+
+        </form>
+        <div class="footer">&copy Adeyemi Sola</div>
+
+      </div>
+    </div>
+  </body>
+  <style media="screen">
+
+    .wrapper{
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .error{
+      background: #900;
+      color: white;
+      transition: all 0.9s;
+    }
+    .heading{
+      background: skyblue;
+      color: white;
+    }
+    .output{
+      height: 30px;
+      display: none;
+    }
+    .appContain{
+      width: 40%;
+      margin: auto;
+      padding: 5px;
+      height: 60vh;
+      border: 1px solid #ddd;
+      border-radius: 4px 4px 0 0;
+    }
+    .entry{
+      display: flex;
+      margin: 5px auto;
+    }
+    .entry>label{
+      flex: 1;
+    }
+    .entry>input{
+      flex: 2;
+    }
+    input{
+      height: 25px;
+    }
+    button{
+      outline: none;
+      border: none;
+      color: white;
+      padding: 5px;
+      font-size: 0.9rem;
+      margin: auto 3px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    /*button:hover{
+      background-color: pink;
+    }*/
+    #sum{background:green;}
+    #product{background: orange;}
+    #difference{background: tomato;}
+    #division{background: purple;}
+    #allGen{background: #ccc;}
+    .footer{
+      background: skyblue;
+      color: white;
+      height: 40px;
+      text-align: center;
+      vertical-align: middle;
+    }
+  </style>
+  <script src="main.js"></script>
+</html>

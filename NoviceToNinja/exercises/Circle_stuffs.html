@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Area and Perimeter Calculations</title>
+</head>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            width: 40%;
+            margin: auto;
+            height: 100vh;
+            border: 2px solid;
+            border-radius: 5px;
+            font-family: calibri;
+        }
+        
+        .top{
+            color: white;
+            height: 10vh;
+            background: tomato;
+            padding: 10px 5px;
+        }
+        #appname{
+            height: 5vh;
+            background: bisque;
+            color: white;
+            text-align: center;
+            font-family: cursive;
+            font-weight: bold;
+            padding: 5px 5px;
+        }
+        .input-grp{
+            display: inline-block;
+            padding: 5px 5px;
+        }
+        .output-grp{
+            display: none;
+            padding: 5px 5px;
+            transition: all 1s;
+/*            border: 1px solid;*/
+/*            background: rgba(0, 238, 238, 0.35);*/
+            margin: 5px auto;
+            color: tomato;
+        }
+        .output-grp label{
+            flex: 2;
+        }
+        .output-grp input{
+            flex: 1;
+            background: #eee;
+            height: 30px;
+            color: tomato;
+            padding: 4px;
+        }
+        .input-grp label{
+            flex: 1;
+        }
+        .input-grp input{
+            flex: 2;
+            height: 30px;
+            border-radius: 5px;    
+        }
+        .btn-grp{
+/*            border: 1px solid;*/
+            padding: 4px 5px;
+        }
+        input[type=submit] {
+            padding: 10px;
+            font-family: calibri;
+            color: tomato;
+            outline: none;
+            font-size: 12px;
+            font-weight: bold;
+            border: 1px solid transparent;
+            width: 80px;
+            cursor: pointer;
+        }
+        .advanced{
+            padding: 5px;
+        }
+        
+        button{
+            background: #eee;
+            height: 30px;
+            color: blue;
+            padding: 5px;
+            font-weight: bold;
+        }
+        .circle{
+            padding: 5px;
+        }
+        .circle>img{
+            border: 3px solid tomato;
+            display: none;
+            background: #eee;
+        }
+        .radiusBorder{
+            border-radius: 50%;
+        }
+        
+    </style>
+    <body>
+        <div class="wrapper">
+            <form id="circle" name="circle_calc">
+                <div class="top"></div>
+                <div id="appname">Circle Properties App</div>
+                <div class="input-grp">
+                    <label for="radius">Enter Radius:</label>
+                    <input type="text" id="radius" name="radius">
+                </div>
+                
+                <div class="output-grp">
+                    <label for="perimeter">Circle's Perimeter is:</label>
+                    <input type="button" value="Answer1" id="answer_perimeter" name="answer_perimeter">
+                </div>
+                <div class="output-grp">
+                    <label for="area">Circle's Area is:</label>
+                    <input type="button" value="Answer2" id="answer_area" name="answer_area">
+                </div>
+                
+                <div class="btn-grp">
+                    <input type="submit" value="Perimeter" id="calc_perimeter" name="calc_perimeter">
+                </div>
+                <div class="btn-grp">
+                    <input type="submit" value="Area" id="calc_area" name="calc_area">
+                </div>
+            </form>
+            <div class="advanced">
+                <button id="plot_circle">Generate Circle</button>
+            </div>
+            <div class="circle">
+                <img>
+            </div>
+        </div>
+    </body>
+    
+    <script type="text/javascript" src="main.js"></script>
+</html>

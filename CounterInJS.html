@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+        <body>
+            <p class="numcount">This is to show 
+                how timer can be used
+            </p>
+            <p id="countInc">60</p>
+            <p id="countInc2"></p>
+            <button onclick="timely()">Start Counting</button>
+            <button onclick="clearInterval(myCounter)">
+                Stop Time</button>
+            <button onclick="show()">Show Message</button>
+            <button onclick="clearTimeout(control)">Skip Message</button>
+            <button onclick="TellHeight()">Get Browser Height</button>
+                <script>
+                    var myCounter;
+                    function timely(){
+                        var counter = document.getElementById("countInc");
+                        var x = 60;
+                        myCounter = setInterval(function Oncount(){
+                            x--;counter.innerHTML = x},1000)
+                    }
+                    var control;
+                    function show(){
+                        control= setTimeout(function(){alert("Welcome to Dashboard")},4000);
+                    }
+                    function TellHeight(){
+                        var windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+                        window.alert("The browser height is " + windowHeight);
+                    }
+                </script>
+        </body>
+    </html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EventListeners JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="" />
+    
+</head>
+<body>
+    <h2>JS addEventListener Method</h2>
+    <button id="btn">Try Out Listeners</button>
+    <p id="demo"></p>
+    <button>Greetings</button>
+    <div id="case" style="height: 60px; width: 100px; background-color: lawngreen; "></div>
+    <div style="height:200px; width:440px; border: 1px solid yellow "></div>
+    <p id="demo2"></p>
+    <p id="attack"></p>
+    <button id="mybtn">Quick Arithmetic</button>
+
+    <div class="box" id="myDiv1">
+        <h2>Bubbling:</h2>
+        <p id="myP1">Click On Me</p>
+    </div>
+    
+    <div class="box" id="myDiv2">
+        <h2>Capturing:</h2>
+        <p id="myP2">Click On Me</p>
+    </div>
+
+    <button onclick="removeHandler()">Stop No</button>
+</body>
+
+    <script>
+        document.getElementById("btn").addEventListener("click",showDate);
+        function showDate(){
+            document.getElementById("demo").innerHTML = Date();
+        }
+        document.getElementsByTagName("button")[1].addEventListener("click",alarm);
+        function alarm(){
+            alert("Hi Mr Browser!");
+        }
+
+        // USing More than Two addEventListeners with different events and functions
+        document.getElementById("case").addEventListener("click",trans);
+        document.getElementById("case").addEventListener("mouseover",slide);
+
+        function slide(){
+            document.getElementsByTagName("div")[1].style.borderRadius = '50%';
+            document.getElementsByTagName("div")[1].style.marginLeft = '0px';
+        }
+        function trans(){
+            document.getElementsByTagName("div")[1].style.borderRadius = '0%';
+            document.getElementsByTagName("div")[1].style.marginLeft = '-50px';
+        }
+        
+        // USING WINDOW RESIZE WITH AddListeners
+        window.addEventListener("resize",genNo);
+        function genNo(){
+            document.getElementById("demo2").innerHTML += Math.round(10*Math.random()) + "<br>";
+        }
+        
+        // Passing Parameter Values to Functions
+        var p1 = 6; var p2 = 8;
+        document.getElementById("mybtn").addEventListener("click",function(){
+            multiply(p1,p2);
+        });
+        function multiply(a,b){
+            var result = a * b;
+            document.getElementById("attack").innerHTML = result;
+        }
+        
+        // BUBBLING AND CAPTURING
+        document.getElementsByClassName("box")[0].addEventListener("click",function(){
+            alert("You clicked the orange element");
+        },false);
+        document.getElementById("myP1").addEventListener("click",function(){
+            alert("You clicked the white element");
+        },false);
+        document.getElementById("myP2").addEventListener("click",function(){
+            alert("You clicked the white element");
+        },true);
+        document.getElementsByClassName("box")[1].addEventListener("click",function(){
+            alert("You clicked the orange element");
+        },true);
+
+        // HANDLING REMOVING EVENT LISTENERS
+        document.getElementById("myDiv2").addEventListener("mouseover",genNo);
+        function removeHandler(){
+            document.getElementById("myDiv2").removeEventListener("mouseover",genNo);
+        }
+
+    </script>
+    <style>
+        .box{
+            background-color: coral;
+            padding: 50px;
+            width: 150px;
+            height: 120px;
+            float: left;
+            margin: 10px;
+        }
+        .box p{
+            background-color: white;
+            font-size: 20px;
+            border: 1px solid;
+            padding: 20px;
+        }
+    </style>
+</html>

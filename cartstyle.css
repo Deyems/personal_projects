@@ -1,0 +1,362 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@keyframes slideUp{
+    0%{
+        left: 91%;
+        top:75%;
+    }
+    50%{left: 100%;
+        top:100%;
+    }
+    100%{left: 91%;
+        top:75%;
+    }
+
+}
+
+/*GLOBAL VARIABLES*/
+button{
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+body{
+    font-family: 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --color:hotpink;
+    --bgcolor: maroon;
+}
+
+/*BUTTON TO SHOW THE NAVBAR*/
+#drop{
+    display: none;
+    width: 20%;
+    height: 40px;
+    padding: 8px;
+    position: relative;
+    text-align: center;
+    justify-self: right;
+}
+
+#drop > span{
+    width: 80%;
+    border: 2px solid;
+    margin-bottom: 4px;
+    display: block;
+}
+/*END OF BUTTON TO SHOW THE NAVBAR*/
+
+/* END OF GLOBAL VARIABLES*/
+
+.wrapper{
+    display: grid;
+    grid-gap: 20px;
+}
+
+/*HEADER STYLYING HERE*/
+header{
+    /*display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(80px,1fr));*/
+    width: 100%;
+    padding: 0%;
+    border: 1px solid red;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+
+header nav{
+    /*border: 1px solid;*/
+    margin-bottom: 10px;
+    display: flex;
+    flex: 0 0 100%;
+    justify-self: center;
+}
+
+header nav>*{
+    border: 1px solid yellowgreen;
+}
+
+.logo img{
+    width: 50%;
+    height: 70px;
+}
+
+header nav ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /*border: 1px solid;*/
+    width: 100%;
+}
+
+header nav ul li{
+    width: 30%;
+}
+header nav ul li a{
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--color);
+}
+
+.contact{
+    justify-self: center;
+}
+
+.cartchoice{
+    justify-self: right;
+}
+
+/*BUTTON TO SHOW ADDED CART TO SHOPPING*/
+.dropdown{
+    display: none;
+    position: absolute;
+    top: 107%;
+    left: -90%;
+    right: 0%;
+    width: 250px;
+    background: #fff;
+    border: 1px solid orange;
+    border-radius: 0 10px;
+    box-shadow: 0 3px 2px greenyellow;
+    transition: all 3s ease-in-out;
+}
+
+.dropdown li{
+    width: 100%;
+}
+
+.dropdown li >*{
+    float: left;
+    margin: 4% 0;
+    width: 100%;
+    border: 1px solid orangered;
+}
+
+.dropdown li div{
+    display: flex;
+    flex: 0 0 90%;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+}
+
+.dropdown li div>*{
+    margin: 2%;
+    align-self: flex-end;
+    justify-items: auto;
+}
+
+.dropdown li section span{
+    margin: 1% 5%;
+}
+
+#choices button{
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 0.25rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 45%;
+    margin: 2% 2%;
+    cursor: pointer;
+}
+
+#choices{
+    background-color: orange;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 1rem;
+    /*text-transform: uppercase;*/
+    width: 100%;
+    font-weight: bolder;
+    position: relative;
+}
+/*
+#choices:hover{
+    display: block;
+}*/
+/*END OF BUTTON TO SHOW ADDED CART TO SHOPPING*/
+
+
+/*BANNER SECTION UNDER THE NAV*/
+.banner{
+    background-image: url('images/Bora_Mountainside-HS_03.jpg');
+    /*background-attachment: fixed;*/
+    background-color: var(--bgcolor);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10%;
+    border: 1px solid;
+    width: 100%;
+}
+
+.banner > div{
+    text-align: center;
+    font-size: 2rem;
+    align-self: baseline;
+}
+/*END OF HEADER SECTION*/
+
+/*ABOUT US AND DOUGNUT PICS SECTION*/
+.about-us{
+    border: 1px solid;
+    padding: 7%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    /*grid-template-columns: repeat(2,1fr);*/
+}
+.notes>*{
+    margin-bottom: 30px;
+}
+
+.description{
+    border: 3px solid orange;
+    height: 400px;
+}
+/*END STYLING OUR ABOUT US*/
+
+
+/*STYLING OUR STORE PRODUCTS*/
+.store{
+    background-color: lightgray;
+}
+
+.store-container{
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.options{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.options ul{
+    display: grid;
+    grid-gap: 25px;
+    margin-bottom: 8px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    /*grid-template-columns: repeat(5,1fr);*/
+}
+
+.options ul li{
+    border: 1px solid;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 5px;
+}
+
+.options ul li a{
+    color: black;
+}
+
+.options h2{
+    margin-bottom: 30px;
+}
+
+.searchbox{
+    width: 60%;
+    height: 35px;
+    border: 1px solid;
+    margin: auto;
+}
+
+input[type=search]{
+    width: 85%;
+    height: 100%;
+    float: right;
+    padding: 1%;
+}
+
+.collections{
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+
+.box{
+    border: 1px solid;
+    border-radius: 10px 0;
+    width: 98%;
+    height: 250px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    transition: all 2s ease-in-out;
+}
+
+.cartIcon{
+    visibility: hidden;
+    position: absolute;
+    background-color: khaki;
+    border-radius: 8px 0 0 0;
+    width: 35px;
+    height: 30px;
+    top: 75%;
+    left: 91%;
+}
+
+.cartIcon:hover{
+    visibility: visible;
+}
+
+.box img{
+    width: 100%;
+    height: 85%;
+}
+.details{
+    width: 100%;
+    padding: 3%;
+    border-radius: 4px;
+    border-top: 3px solid;
+    border-color: var(--color);
+}
+.details caption{
+    float:right;
+}
+.details span{float:right;}
+/*END STYLING OUR STORE PRODUCTS*/
+
+/*FOOTER STARTS HERE*/
+footer{
+    padding: 20px;
+    width: 100%;
+}
+
+.contain{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    height: 300px;
+
+}
+
+.contain > div{
+    border: 1px solid;
+}

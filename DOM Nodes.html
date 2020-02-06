@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Handling NODES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="" />
+    
+</head>
+<body>
+    <h1 id="id01">My First Page</h1>
+    <p id="id02">Hello!</p>
+    <button onclick="call()">Change Content</button>
+    <p>The DOM is very Useful</p>
+    <div>
+        <p>This example demonstrates the <b>document.documentElement</b>property</p>
+    </div>
+    <button id="mybtn">Tell Node</button>
+</body>
+    <script>
+        function call(){
+            document.getElementById("id02").innerHTML = 
+            document.getElementById("id01").childNodes[0].nodeValue;
+        }
+        
+        document.getElementById("mybtn").addEventListener("click",Nodename);
+        function Nodename(){
+            document.getElementById("id02").innerHTML = 
+                document.getElementById("id01").nodeName;
+        }
+        //alert(document.documentElement.innerHTML);
+        //alert(document.body.innerHTML);
+
+        //document.getElementById("id02").innerHTML = 
+            //document.getElementById("id01").innerHTML;
+    </script>
+</html>

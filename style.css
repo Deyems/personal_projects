@@ -1,0 +1,60 @@
+body,.wrapper{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.slide{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    /*align-items: center;*/
+}
+
+.slider{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 60vh;
+    text-align: center;
+}
+
+.slider span{
+    font-size: 5rem;
+    color: navy;
+    text-align: center;
+}
+
+.slide1{
+    background-image: url('images/Bora_Mountainside-HS_03.jpg');
+}
+
+.slide2{
+    background-image: url('images/splash-water-footage-000539858_prevstill.jpeg');
+}
+
+.slide3{
+    background-image: url('images/PictoUse.jpg');
+}
+
+.arrowleft{
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent orangered transparent transparent;
+    position: absolute;
+    top: 33%;
+    left: 30px;
+    cursor: pointer;
+}
+
+.arrowRight{
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent transparent transparent orangered;
+    position: absolute;
+    top: 33%;
+    right: 30px;
+    cursor: pointer;
+}

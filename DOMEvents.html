@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Handle Events</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="" />
+</head>
+<body onload="checkCookies()">
+    <h1 onclick="this.innerHTML='oOoOops!'">Click me to See the change</h1>
+    <h2 onclick="changeText(this)">UI elections had been lovely till...</h2>
+    <p id="lent"></p>
+    <button onclick="showDate()">Give Date</button>
+    <button id="trial">Another Date</button>
+    <p id="demo"></p>
+    <input type="text" id="fname" onchange="lowerLetters()">
+    <div id="comp" onmouseover="mOver(this)" onmouseout="mOut(this)">
+    </div>
+</body>
+<style>
+#comp{
+    width: 89px;
+    height: 50px;
+    border: 1px solid hotpink;
+}
+
+</style>
+<script>
+    function changeText(id){
+        id.innerHTML = "Hunter Sola was a Greater Politician"
+    }
+    function showDate(){
+        document.getElementById("lent").innerHTML = Date();
+    }
+    document.getElementById("trial").onclick = showDate;
+    function checkCookies(){
+        var text = "";
+        if(navigator.cookieEnabled == true){
+            text = "Cookies are Enabled!";
+        } else {
+            text = "Cookies NOT enabled";
+        }
+        document.getElementById("demo").innerHTML = text;
+    }
+
+    function lowerLetters(){
+        cont = document.getElementById("fname");
+        cont.value = cont.value.toLowerCase();
+    }
+
+    function mOver(id){
+        id.innerHTML = 'Congrats Man!';
+        id.style.backgroundColor = 'red';
+    }
+
+    function mOut(id){
+        id.innerHTML = 'Default State';
+        id.style.backgroundColor = 'grey';
+        id.style.width = '100px';
+    }
+
+</script>
+</html>

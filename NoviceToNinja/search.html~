@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <title>Search</title>
+  </head>
+  <body>
+    <form name='search' action="">
+      <!-- I USED THE FIELDSET TO QUICKLY PERFORM
+            A GOOGLE FORM MAGIC AT ITS STRUCTURE STAGE-->
+      <!-- <fieldset> -->
+        <!-- <legend>Enter Search Question</legend> -->
+        <input type="text" name="searchInput" value="Enter Search Question">
+      <!-- </fieldset> -->
+      <!-- <input type="text" name="email" value="">
+      <input type="password" name="password" value=""> -->
+      <!-- <br><br><br><br><br><br> -->
+      <button type="submit">Search</button>
+      <!-- <button type="reset" name="reset">Reset</button> -->
+    </form>
+  </body>
+  <style media="screen">
+  /*form{
+    position: relative;
+  }*/
+    fieldset{
+      padding: 0;
+      margin:0;
+      /*display: none;*/
+      border: none;
+      width: 150px;
+    }
+    legend{
+      display: none;
+    }
+
+    input{
+      height: 40px;
+      /*top: -5px;*/
+    }
+  </style>
+  <script src="searcher.js"></script>
+</html>
