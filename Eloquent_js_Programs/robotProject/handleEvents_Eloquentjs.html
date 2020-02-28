@@ -1,0 +1,153 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>DOM Events stuffs</title>
+        <script src="handleEvents.js" defer></script>
+    </head>
+    <body>
+        <div>
+            <button>Click Me in any way you want</button>
+        </div>
+        <div class="broad">
+            <button>Click To Spread!</button>
+        </div>
+        
+        <div class="type-area">
+            <div class="screen"></div>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+        </div>
+        
+        <a href="Domhtml.html">Safe Dom page</a>
+        <div>
+            <p>Drag the bar to change its Width:</p>
+            <div class="bar" style="background-color: orange; width: 60px; height: 20px"></div>
+        </div>
+        <div>
+        <div id="text-area">
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+            escapilicious mundane tribitieus lorman
+        </div>
+        </div>
+
+        <div class="img-area">
+            <img height="150px" width="30%" src="../../imgShopCart/chocolate.jpg">
+            <img height="140px" src="../../imgShopCart/doughnut.jpg">
+        </div>
+        
+        <div>
+            <p>Name: <input type="text" data-help="Enter Your Full name"> </p>
+            <p>Age: <input type="text" data-help="Your age in years"> </p>
+        </div>
+        <div id="help"></div>
+        
+        <div class="someCalc">
+            <form>
+                <label id="som">Enter a Number to simulate Calculations</label>
+                <input type="number" id="number" name="number" min=1>
+                <input type="submit" value="Enter">
+            </form>
+        </div>
+        <div class="showCalc"></div>
+        <div>
+            <button id="randomColor">Color Mode</button>
+        </div>
+        
+    </body>
+    <style>
+        #randomColor{
+            background-color: coral;
+            color: white;
+            font-family: garamond;
+            font-size: 1.2rem;
+            padding: 8px 12px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        #randomColor:hover{
+            background-color: #8d2a05;
+            color: white;
+        }
+        
+        #text-area{
+/*            visibility: hidden;*/
+            display: none;
+        }
+        .broad{
+            width: 150px;
+            height: 100px;
+            background-color: tomato;
+            border: 2px solid green;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .screen{
+            background-color: #000;
+            color: white;
+            margin: 10px 0;
+            padding: 5px 10px;
+            height: 35px;
+            width: 200px;
+        }
+        
+        .dot{
+            height: 8px;
+            width: 8px;
+            border-radius: 4px;
+            background-color: blue;
+            position: absolute;
+        }
+        
+        .type-area button{
+            font-size: 1.2rem;
+            width: 40px;
+            height: 40px;
+            background-color: bisque;
+            color: black;
+            padding: 5px;
+            border: 2px solid grey;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+    </style>
+</html>
