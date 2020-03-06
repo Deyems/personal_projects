@@ -1,0 +1,75 @@
+<!doctype html>
+
+<tab-panel>
+    <div class="navbar">
+        <button>Show 1</button>
+        <button>Show 2</button>
+        <button>Show 3</button>
+    </div>
+    
+    <div data-tabname="one">Tab one
+    <ul>
+        <li>Pan 1</li>
+        <li>Pan 2</li>
+        <li>Pan 3</li>
+    </ul>
+    </div>
+    
+    <div data-tabname="two">Tab two
+        <ul>
+            <li>Pan 2_1</li>
+            <li>Pan 2_2</li>
+            <li>Pan 2_3</li>
+        </ul>
+    </div>
+    
+    <div data-tabname="three">Tab three
+        <ul>
+            <li>Pan 3_1</li>
+            <li>Pan 3_2</li>
+            <li>Pan 3_3</li>
+        </ul>
+    </div>
+</tab-panel>
+
+<style>
+    [data-tabname="two"],[data-tabname="three"] {
+        display: none;
+    }
+</style>
+
+<script>
+  function asTabs(node) {
+      let dropDowns = document.querySelectorAll("[data-tabname]");
+//      console.log(dropDown);
+      let ctrTabs = node.children[0].children;
+      console.log(ctrTabs);
+      for(let index = 0; index < Array.from(ctrTabs).length; ++index){
+          let btnClicked = Array.from(ctrTabs)[index];
+          let pos = index+1;
+          
+          btnClicked.addEventListener('click', (e) => {
+//              if(pos >= 1 && pos+1 <=4){
+              node.children[pos].style.display = "block";
+              node.children[pos-1].style.display = "none";
+              node.children[pos+1].style.display = "none";
+//              }
+          });
+          
+      }
+      
+      function showCont(e) {
+//          console.log(e.target.parentElement.parentElement);
+//          Array.from(dropDowns).forEach( (dropDown) => {
+//              if(e.target){
+//                  dropDown.style.display = 'block';
+//              }
+//          });
+          for(let index = 0; index < Array.from(ctrTabs).length; index++){
+              if(e.target ){}
+          }
+      }
+      
+  }
+  asTabs(document.querySelector("tab-panel"));
+</script>

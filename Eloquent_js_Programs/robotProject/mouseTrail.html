@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mouse Trail</title>
+    <meta charset="utf-8">
+    <meta name="author" lang="en">
+</head>
+<body>
+    <div class="wrapper">
+<!--        <div class="trail"></div>-->
+    </div>
+</body>
+    <style>
+        .trail{
+            position: absolute;
+            background-color: darkorchid;
+            width: 12px;
+            height: 12px;
+            border-radius: 5px;
+        }
+    </style>
+    <script spellcheck="true">
+        /**
+        *************
+        HERE IS TO FIX ALL THE SMALL BALLS 
+        TO ACT AS TRAIL ON THE SCREEN
+        *************
+        **/
+        let allFixedElement = [];
+            for(let i = 0; i < 15; ++i){
+                allFixedElement[i] = document.createElement("div");
+                
+                allFixedElement[i].classList.add("trail");
+                document.body.appendChild(allFixedElement[i]);
+            }
+        
+        /**     *************
+        HERE IS TO LISTEN FOR MOVEMENT OF THE MOUSE 
+        AND SEND OUT THE BALLS ONE BY ONE
+        *************   **/
+        window.addEventListener("mousemove", showDot);
+        let currentPos = 0;
+        function showDot(event) {
+            let movingDot = allFixedElement[currentPos];
+            movingDot.style.left = `${event.pageX+currentPos}px`;
+            movingDot.style.top = `${event.pageY+currentPos}px`;                    
+            currentPos = (currentPos + 1) % allFixedElement.length;
+            event.preventDefault();
+        }
+    </script>
+</html>
