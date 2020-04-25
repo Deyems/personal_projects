@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Draw Animated Sprite</title>
+  <link rel="stylesheet" href="">
+</head>
+<body>
+  <canvas></canvas>
+</body>
+<script>
+  let cx = document.querySelector("canvas");
+  cx.style.border = "2px solid blue";
+  cx.style.width = "560px";
+  cx = cx.getContext("2d");
+
+  let img = document.createElement("img");
+  img.src = "../../../imgShopCart/edu_logo.png";
+  let spriteW = 20, spriteH = 30;
+  img.addEventListener("load", () => {
+    let cycle = 0;
+    setInterval(() => {
+      cx.clearRect(0,0,spriteW, spriteH);
+      cx.drawImage(img, cycle*spriteW, 0, spriteW, spriteH, 0, 0, spriteW, spriteH);
+      cycle = (cycle + 1) % 10;
+    }, 100);
+  });
+</script>
+</html>

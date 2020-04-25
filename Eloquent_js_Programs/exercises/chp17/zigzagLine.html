@@ -1,0 +1,27 @@
+<!-- Eloquent_js_Programs\exercises\chp17\zigzagLine.html -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Zigzag | Line </title>
+</head>
+<body>
+  <canvas width="600" height="300"></canvas>
+</body>
+  <script>
+    let canvas = document.querySelector("canvas");
+    let ctx = canvas.getContext("2d");
+    canvas.style.border = "2px solid red";
+
+    function zigzag(startX,startY,edges,dx,dy){
+      ctx.moveTo(startX, startY);
+      for(let i = 0; i < edges; i++){
+        ctx.lineTo(startX+=dx,startY+=dy);
+        ctx.lineTo(startX-=dx, startY+=dy);
+      }
+      ctx.stroke();
+    }
+    zigzag(30,30,5,90,7);
+    zigzag(150,30,5,90,7);
+
+  </script>
+  </html>

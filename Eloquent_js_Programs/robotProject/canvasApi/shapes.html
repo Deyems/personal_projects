@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>Draw your Shape</title>
+    </head>
+    <body>
+        <canvas id="drawCan"></canvas>
+        <canvas id="paths"> Can't support canvas</canvas>
+        <canvas id="bezx"> Trying out BezierCurve Tool </canvas>
+        <canvas id="arcOrCircle"> Try out Drawing Circles </canvas>
+        <canvas id="pie-chart" width="600" height="300"></canvas>
+        <script>
+            let ctx = document.getElementById("drawCan");
+            ctx.style.width = "1000px";
+            ctx.style.height = "500px";
+            ctx.style.border = "2px solid red";
+
+            let canva = ctx.getContext("2d");
+                canva.beginPath();
+                canva.fillStyle = 'yellow';
+                canva.moveTo(100,20);
+                canva.lineTo(50,80);
+                canva.lineTo(160,80);
+                canva.fill();
+                canva.closePath();
+                canva.moveTo(200,50);
+                canva.fillRect(200,50,60,70);
+                canva.stroke();
+
+            let canva2 = document.getElementById("paths");
+                let ctx2 = canva2.getContext("2d");
+                canva2.style.border = "2px solid green";
+                ctx2.beginPath();
+                ctx2.moveTo(10,90);
+                ctx2.quadraticCurveTo(60,10,90,90);
+                ctx2.moveTo(90,90);
+                ctx2.quadraticCurveTo(130,10,170,90);
+                ctx2.stroke();
+
+            let cv = document.getElementById("bezx");
+                let cx = cv.getContext("2d");
+                cv.style.border = "2px solid skyblue";
+            cx.beginPath();
+            cx.moveTo(10,90);
+            cx.bezierCurveTo(10,10,90,10,50,90);
+            cx.lineTo(90,10);
+            cx.lineTo(10,10);
+            cx.closePath();
+
+            cx.moveTo(120,100);
+            cx.quadraticCurveTo(150,40,180,100);
+            cx.quadraticCurveTo(210,40,240,100);
+            cx.quadraticCurveTo(230,145,180,150);
+            cx.quadraticCurveTo(120,140,120,100);
+            cx.stroke();
+
+            const results = [{name: "Satisfied", count: 1043, color: "lightblue"},
+                      {name: "Neutral", count: 563, color: "lightgreen"},
+                      {name: "Unsatisfied", count: 510, color: "pink"},
+                      {name: "No Comment", count: 175, color: "silver"}]
+
+            let canx = document.getElementById("pie-chart");
+            canx.style.border = "2px solid tomato";
+            // canx.style.width = "600";
+            // canx.style.height = "600";
+
+            document.body.appendChild(canx);
+            let canxCont = canx.getContext("2d");
+            let totalCount = results.reduce((total,currVal) => total+currVal.count,0);
+            // console.log(totalCount);
+            let startAngle = 0;
+
+            results.forEach( obj => {
+              canxCont.beginPath();
+
+              sliceAngle = (obj.count/totalCount) * 2 * Math.PI;
+              canxCont.arc(200,150,50,startAngle,startAngle+sliceAngle);
+              canxCont.lineTo(200,150);
+              canxCont.stroke();
+              canxCont.fillStyle = obj.color;
+              canxCont.fill();
+
+              // canxCont.rotate((startAngle*sliceAngle)*Math.PI/180);
+              // canxCont.font = "34px garamond";
+              // canxCont.fillText(obj.name,290,150);
+              // canxCont.resetTransform();
+
+              startAngle += sliceAngle;
+            });
+
+            let ark = document.querySelector("#arcOrCircle").getContext("2d");
+            ark.beginPath();
+            ark.arc(50,50,45,0,2*Math.PI);
+            ark.moveTo(150,50);
+            ark.arc(150,50,45,0,0.5*Math.PI);
+            ark.stroke();
+
+            let canx2 = document.createElement("canvas");
+            canx2.style.border = "2px solid purple";
+            canx2.style.margin = '15px';
+            document.body.appendChild(canx2);
+            let canxCont2 = canx2.getContext("2d");
+            canxCont2.font = '1.5rem calibri';
+            canxCont2.fillStyle = "fuchsia";
+            canxCont2.fillText('I am a Logo here',20,40);
+            canxCont2.strokeText('My stroke goes here', 20,75);
+
+            let drawx = document.createElement("canvas");
+            drawx.style.border = "2px solid fuchsia";
+            drawx.style.width = "500px";
+            // drawx.style.width = "550px";
+            // drawx.style.height = "550px";
+            document.body.appendChild(drawx);
+            let drawxCont = drawx.getContext("2d");
+
+            let img = document.createElement('img');
+            img.src = "../../../imgShopCart/edu_logo.png";
+            // img.style.width = "30px";
+            // img.style.height = "30px";
+            img.addEventListener("load", () => {
+              for (let x = 5; x < 150; x += 30){
+                drawxCont.drawImage(img, x, 10,20,30);
+              }
+            });
+
+
+
+        </script>
+    </body>
+</html>

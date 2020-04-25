@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Diamond | Drawn </title>
+</head>
+<body>
+  <canvas width="600" height="300"></canvas>
+</body>
+  <script>
+    let canvas = document.querySelector("canvas");
+    let ctx = canvas.getContext("2d");
+    canvas.style.border = "2px solid red";
+
+    function drawDiamond(startX, startY, dx, dy, fillColor,strColor){
+      ctx.moveTo(startX, startY);
+      ctx.fillStyle = fillColor;
+      ctx.strokeStyle = strColor;
+      ctx.lineTo(startX += dx, startY += dy);
+      ctx.lineTo(startX -= dx, startY += dy);
+      ctx.lineTo(startX -= dx, startY-= dy);
+      ctx.closePath();
+      ctx.stroke();
+      ctx.fill();
+      ctx.beginPath();
+    }
+
+    // drawDiamond(startX,startY,dx,dy,color,outlineColor);
+    drawDiamond(100,30,40,50, "yellow", "purple");
+    // ctx.clear();
+    drawDiamond(200,30,40,50, "grey", "red");
+
+  </script>
+</html>

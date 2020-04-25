@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Create a scalable Object </title>
+</head>
+<body>
+  <canvas></canvas>
+</body>
+<script>
+  let cx = document.querySelector("canvas");
+  cx.style.width = "500px";
+  cx.style.height = "500px";
+  cx.style.border = "2px solid green";
+  cx = cx.getContext("2d");
+
+  cx.scale(3,0.5);
+  cx.beginPath();
+  cx.arc(50,50, 40, 0, Math.PI *2);
+  cx.lineWidth = 1.3;
+  cx.stroke();
+</script>
+</html>
