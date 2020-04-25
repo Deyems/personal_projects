@@ -1,0 +1,63 @@
+<html>
+<head>
+  <title>Interest Rate Calculator</title>
+</head>
+<body>
+
+</body>
+  <script>
+    const data = [{
+      "principal": 2500,
+      "time": 1.8
+    },{
+      "principal": 1000,
+      "time": 5
+    },{
+      "principal": 3000,
+      "time": 1
+    },{
+      "principal": 2000,
+      "time": 3
+    }];
+
+    function interestCalculator(arr){
+       return arr.map((obj,index) => {
+        obj["rate"] = ((obj["principal"]>=2500) && (obj["time"]>1 && obj["time"]<3) ) ? 3 : 1;
+        obj["rate"] = ((obj["principal"]>=2500) && (obj["time"]>=3) ) ? 4 : 1;
+        obj["rate"] = ((obj["principal"]<2500) || (obj["time"]<=1) ) ? 2 : 1;
+        // obj["rate"] = 1;
+        obj["interest"] = (obj["principal"]* obj["rate"]*obj["time"])/100;
+      });
+      // console.log(interestData);
+      // return;
+    }
+
+    function interestCalculator(arr){
+      let rate; let interestData = [];
+      for(let index = 0; index < arr.length; index++){
+        //Set Conditions for the rate to work in the loop
+        if(arr[index]["principal"]>= 2500 &&
+          (arr[index]["time"]>1 && arr[index]["time"]<3) ){
+          arr[index]["rate"] = 3;
+        }else if( arr[index]["principal"]>= 2500 &&
+          (arr[index]["time"]>=3) ){
+          arr[index]["rate"] = 4;
+        }else if( arr[index]["principal"]< 2500 &&
+          (arr[index]["time"]<=1) ){
+          arr[index]["rate"] = 2;
+        }else{
+          arr[index]["rate"] = 1;
+        }
+        //Calculate the Interest inside the loop for each object in array
+        arr[index]["interest"] =(arr[index]["principal"] * arr[index]["time"]
+        * arr[index]["rate"])/100;
+      }
+      interestData = arr;
+      console.log(interestData);
+      return;
+    }
+
+    console.log(interestCalculator(data));
+
+  </script>
+</html>
