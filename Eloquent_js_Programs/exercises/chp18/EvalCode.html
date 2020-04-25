@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Evaluate Codes | Function Constructor </title>
+</head>
+<body>
+  <form method="post">
+    <textarea id="data" autofocus></textarea>
+    <button type="submit" name="run">Run code</button>
+  </form>
+  <div class="result"></div>
+  <div class="error"></div>
+</body>
+  <style>
+  textarea{
+    width: 200px;
+    height: 200px;
+    resize: none;
+  }
+  .result{
+    color: blue;
+  }
+  .error{
+    color: red;
+  }
+  </style>
+  <script>
+  // let plusOne = Function("n,p","return n+p");
+  // console.log(plusOne(8,7));
+
+    let data = document.querySelector("#data");
+    let action = document.querySelector("[name=run]");
+    let output = document.querySelector(".result");
+    let showErr = document.querySelector(".error");
+    action.addEventListener("click", (e) => {
+      // console.log('I pressed run');
+      try{
+        let code = data.value;
+        let result = Function(code);
+        output.textContent = result();
+      } catch(e){
+        showErr.textContent = e;
+      }
+      e.preventDefault();
+    });
+  </script>
+
+</html>

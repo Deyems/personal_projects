@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Create a Branch On Tree </title>
+</head>
+<body>
+  <canvas width="600" height="300"></canvas>
+</body>
+  <script>
+  cx = document.querySelector("canvas");
+  cx.style.border ="2px solid green";
+  cx = cx.getContext("2d");
+
+    function branch(length, angle, scale){
+        cx.fillRect(0, 0, 1, length);
+      if(length < 8) {
+        // let storedTrans = cx.getTransform();
+        // console.log(storedTrans);
+        return;
+    }
+      cx.save();
+        cx.translate(0, length);
+        cx.rotate(-angle);
+      branch(length * scale, angle, scale);
+      cx.rotate(2 * angle);
+      branch(length*scale, angle, scale);
+      cx.restore();
+    }
+    cx.translate(300,0);
+    branch(60, 28.65*Math.PI/180, 0.8);
+  </script>
+</html>

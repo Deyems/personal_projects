@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Create a Flip of Image </title>
+</head>
+<body>
+  <canvas></canvas>
+</body>
+  <script>
+  function flipHorizontally(context, around){
+    context.translate(around,0);
+    context.scale(-1,1);
+    context.translate(-around,0);
+  }
+  let cx = document.querySelector("canvas");
+  cx.style.border = "2px solid brown";
+
+  cx = cx.getContext("2d");
+  let img = document.createElement("img");
+  img.src = "../../../imgShopCart/edu_logo.png";
+  let spriteW = 44, spriteH = 60;
+
+  let btn = document.createElement("button");
+  btn.textContent = "Stop Animating";
+  document.body.appendChild(btn);
+  img.addEventListener("load", () => {
+    let joggle = setInterval(() => {
+      flipHorizontally(cx, 100 + spriteW/2);
+      cx.drawImage(img,0,0,spriteW, spriteH, 100,0, spriteW, spriteH);
+    }, 500);
+    cx.beginPath();
+    cx.moveTo(200,100);
+    cx.lineTo(250,100);
+    cx.stroke();
+    btn.addEventListener("click", () => {
+      clearInterval(joggle);
+    });
+  });
+  </script>
+</html>

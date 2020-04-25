@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Trapezoid | Drawn </title>
+</head>
+<body>
+  <canvas width="600" height="300"></canvas>
+</body>
+  <script>
+    let canvas = document.querySelector("canvas");
+    let ctx = canvas.getContext("2d");
+    canvas.style.border = "2px solid green";
+    // ctx.moveTo(10,10);
+    // ctx.lineTo(70,10);
+    function drawTrapezoid(startX,startY,lengthA,height,displaced){
+      // ctx.beginPath();
+      ctx.moveTo(startX,startY);
+      ctx.lineTo(startX+=lengthA, startY);
+      ctx.lineTo(startX, startY+=height);
+      ctx.lineTo(startX-=(lengthA+displaced), startY);
+      ctx.closePath();
+      ctx.stroke();
+    }
+
+    drawTrapezoid(30,30,70,50,20);
+
+  </script>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> 8-Edges | Star </title>
+</head>
+<body>
+  <canvas width="600" height="300"></canvas>
+</body>
+  <script>
+  const canvas = document.querySelector("canvas");
+  const ctx = canvas.getContext("2d");
+  function draw8edgedStar(){
+
+  }
+  canvas.style.border = "2px solid brown";
+  ctx.beginPath();
+  // ctx.moveTo(canvas.width/2,canvas.height/2);
+  // ctx.lineTo(canvas.width*3/4,canvas.height/2);
+
+  // ctx.translate(100,120);
+  // ctx.scale(30,30);
+
+  // ctx.moveTo(Math.cos(300*Math.PI/180),Math.sin(300*Math.PI/180));
+  // ctx.quadraticCurveTo(Math.cos(45*Math.PI/180),Math.sin(45*Math.PI/180),Math.cos(100*Math.PI/180),Math.sin(100*Math.PI/180));
+
+  // ctx.moveTo(120,60);
+  // ctx.quadraticCurveTo(135,120,160,70);
+  // ctx.quadraticCurveTo(180,140,165,90);
+
+  ctx.moveTo(270,90);
+  ctx.quadraticCurveTo(300,150,330,90);
+  ctx.quadraticCurveTo(300,160,360,140);
+  ctx.quadraticCurveTo(300,170,360,190);
+  ctx.quadraticCurveTo(280,190,340,240);
+  ctx.quadraticCurveTo(290,190,280,240);
+
+  ctx.stroke();
+
+  </script>
+</html>

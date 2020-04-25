@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Bouncing Ball | Animation </title>
+</head>
+<body>
+  <canvas width="600" height="300"></canvas>
+</body>
+  <script>
+  //NOT DONE WITH IT YET
+  let canvas = document.querySelector("canvas");
+  canvas.style.border ="2px solid green";
+
+  let ctx = canvas.getContext("2d");
+
+  canvas.addEventListener("load",() => {
+    ctx.beginPath();
+    setTimeout(() => {
+      ctx.arc(100,100,20,0,7);
+      ctx.translate(50,50);
+    },500);
+
+    ctx.stroke();
+  });
+
+</script>
+</html>

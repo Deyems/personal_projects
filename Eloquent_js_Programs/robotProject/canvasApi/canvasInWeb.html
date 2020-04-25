@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div>Before Canvas</div>
+        <canvas class='canvas'></canvas>
+        <div>After Canvas</div>
+        <canvas class="c2ndCanv"></canvas>
+    </body>
+    <script>
+        let canvas = document.querySelector('.canvas').getContext("2d");
+        canvas.fillStyle = 'red';
+        canvas.fillRect(10,10,100,120);
+        
+        canvas.moveTo(150,20);
+        canvas.strokeStyle = 'blue';
+        canvas.strokeRect(150,20,70,50);
+        
+        let ctx = document.querySelector('.c2ndCanv').getContext("2d");
+        ctx.strokeStyle = 'green';
+        ctx.strokeRect(5,5,50,50);
+        ctx.lineWidth = 4;
+        ctx.strokeRect(135,5,50,50);
+        
+//        ctx.moveTo(200,5);
+        ctx.beginPath();
+        
+        for(let y = 10; y< 100; y+= 10){
+            ctx.moveTo(200,y);
+            ctx.lineTo(290,y);
+        }
+        ctx.stroke();
+        
+    </script>
+</html>
