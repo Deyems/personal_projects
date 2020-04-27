@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Video Player</title>
+  <!--NEEDS BOOTSTRAP LINK-->
+  <link
+  rel="stylesheet"
+  href="../../fontawesome-free-5.5.0-web/css/all.css">
+  <link rel="stylesheet" href="img/progress.css">
+  <link rel="stylesheet" href="videoPlayerApp.css">
+
+  <script src="videoPlayerApp.js" defer></script>
+</head>
+
+<body>
+  <!-- <div class="wrapper"> -->
+    <h1>Customised Video Player</h1>
+    <video src="videos/gone.mp4"
+    id="video"
+    class="screen"
+    poster="img/poster.png"></video>
+    <div class="controls">
+      <button class="btn" id="play">
+        <i class="fa fa-play fa-2x"></i>
+      </button>
+      <button class="btn" id="stop">
+        <i class="fa fa-stop fa-2x"></i>
+      </button>
+      <input
+        type="range"
+        id="progress"
+        class="progress"
+        min="0"
+        max="100"
+        step="0.1"
+        value="0">
+        <span class="timestamp" id="timestamp">00:00</span>
+    </div>
+  <!-- </div> -->
+</body>
+
+<!-- <script src="../bootstrapHelpers/popper.min.js"></script> -->
+<!-- <script src="../bootstrapHelpers/jquery-3.3.1.slim.min.js"></script>
+<script src="../bootstrapHelpers/bootstrap.min.js"></script> -->
+</html>
