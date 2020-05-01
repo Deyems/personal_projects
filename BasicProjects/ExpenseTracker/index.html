@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+  <title> Expense Tracker </title>
+  <link
+  rel="stylesheet" href="../../../fontawesome-free-5.5.0-web/css/all.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <h2>Expense Tracker</h2>
+
+  <div class="container">
+    <h4>Your Balance</h4>
+    <h1 id="balance">N0.00</h1>
+
+    <div class="inc-exp-container">
+      <div>
+        <h4>Income</h4>
+        <p id="money-plus" class="money plus">+N0.00</p>
+      </div>
+
+      <div>
+        <h4>Expense</h4>
+        <p id="money-minus" class="money minus">-N0.00</p>
+      </div>
+    </div>
+
+      <h3>History</h3>
+      <ul id="list" class="list">
+        <li class="minus">Cash
+          <span>-N400</span>
+          <button type="button" class="delete-btn">x</button>
+        </li>
+      </ul>
+
+      <h3>Add new transaction</h3>
+      <form id="form" method="post">
+        <div class="form-control">
+          <label for="text">Text</label>
+          <input type="text" id="amount" placeholder="Enter text...">
+        </div>
+        <div class="form-control">
+          <label for="amount">Amount<br />
+            (negative - expense, positive - income)
+          </label>
+          <input type="text" id="Amt t" placeholder="Enter text...">
+        </div>
+      </form>
+
+      <button type="button" class="btn">Add Transaction</button>
+
+    <!-- </div> -->
+  </div>
+
+</body>
+</html>
